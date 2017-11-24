@@ -1,6 +1,7 @@
 /*
  * Created on 2016-03-10
  * Copyright (c) 2016 Lilian Dias
+ * https://github.com/liliansousa
  */
 
  module.exports = function(grunt) {
