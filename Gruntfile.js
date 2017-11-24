@@ -186,6 +186,23 @@
 
         },
 
+        htmlmin: {                                     // Task
+          dist: {                                      // Target
+            options: {                                 // Target options
+              removeComments: true,
+              collapseWhitespace: true
+            },
+            files: [
+              {
+                  expand: true,
+                  cwd: 'dist/',
+                  src: ['**/*.html'],
+                  dest: 'dist/'
+              }]
+
+          }
+        },
+
         copy: {
           scripts: {
             files: [{
@@ -215,6 +232,7 @@
       'cssmin',
       'copy',
       'connect:livereload',
+      'htmlmin',
       'watch'
   ]);
 
