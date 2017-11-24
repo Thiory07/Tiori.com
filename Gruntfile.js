@@ -20,9 +20,9 @@
               },
               files: [
                 'dist/{,*/}*.html',
-                'dist/assets/v2/css/*.css',
-                'dist/assets/v2/js/*.js',
-                'dist/assets/v2/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+                'dist/assets/css/*.css',
+                'dist/assets/js/*.js',
+                'dist/assets/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
               ]
             },
             gruntfile: {
@@ -31,21 +31,21 @@
             },
             sassV2: {
               files: [
-                  'src/assets/v2/sass/**/*.scss',
+                  'src/assets/sass/**/*.scss',
               ],
               tasks: ['newer:sass'],
             },
             cssv2: {
               files: [
-                  'src/assets/v2/css/*.css',
-                  'src/assets/v2/css/**/*.css'
+                  'src/assets/css/*.css',
+                  'src/assets/css/**/*.css'
               ],
               tasks: ['newer:cssmin'],
             },
             jsv2: {
                 files: [
-                    'src/assets/v2/js/*.js',
-                    'src/assets/v2/js/**/*.js',
+                    'src/assets/js/*.js',
+                    'src/assets/js/**/*.js',
                 ],
                 tasks: ['copy:scripts'],
             },
@@ -85,10 +85,10 @@
             },
             imagesV2:{
                 files: [
-                    'src/assets/v2/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-                    'src/assets/v2/images/**/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-                    'src/assets/v2/images/**/*.{png,jpg,jpeg,gif,webp,svg}',
-                    'src/assets/v2/images/*.{png,jpg,jpeg,gif,webp,svg}'
+                    'src/assets/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+                    'src/assets/images/**/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+                    'src/assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}',
+                    'src/assets/images/*.{png,jpg,jpeg,gif,webp,svg}'
                 ],
                 tasks: ['newer:imagemin'],
             },
@@ -113,11 +113,11 @@
         assemble: {
             options: {
                 flatten: true,
-                assets: 'dist/assets/v2',
+                assets: 'dist/assets',
                 plugins: ['permalinks','grunt-assemble-sitemap'],
                 partials: ['<%= settings.src %>/templates/includes/**/*.hbs'],
                 layoutdir: 'src/templates/layouts/',
-                layout: 'alternate-template.hbs',
+                layout: 'template.hbs',
                 data: ['src/data/*.{json,yml}']
             },
             main: {
@@ -137,15 +137,15 @@
             pagesV2: {
                 files: [{
                     expand: true,
-                    cwd: 'src/assets/v2/sass/pages/',
+                    cwd: 'src/assets/sass/pages/',
                     src: ['*.scss'],
-                    dest: 'src/assets/v2/css/',
+                    dest: 'src/assets/css/',
                     ext: '.css'
                 }]
             },
             commonV2: {
               files: {
-                'src/assets/v2/css/common/main.css': 'src/assets/v2/sass/main.scss'
+                'src/assets/css/common/main.css': 'src/assets/sass/main.scss'
               }
             }
         },
@@ -156,18 +156,18 @@
             mainV2: {
                 files: [{
                     expand: true,
-                    cwd: 'src/assets/v2/css/',
+                    cwd: 'src/assets/css/',
                     src: ['*.css', '!*.min.css'],
-                    dest: 'dist/assets/v2/css/',
+                    dest: 'dist/assets/css/',
                     ext: '.min.css'
                 }]
             },
             commonV2: {
                 files: [{
                     expand: true,
-                    cwd: 'src/assets/v2/css/common/',
+                    cwd: 'src/assets/css/common/',
                     src: ['*.css', '!*.min.css'],
-                    dest: 'dist/assets/v2/css/common/',
+                    dest: 'dist/assets/css/common/',
                     ext: '.min.css'
                 }]
             }
@@ -178,9 +178,9 @@
             mainV2: {// Another target
                 files: [{
                     expand: true, // Enable dynamic expansion
-                    cwd: 'src/assets/v2/images/',                // Src matches are relative to this path
+                    cwd: 'src/assets/images/',                // Src matches are relative to this path
                     src: ['**/*.{png,jpg,gif}'],// Actual patterns to match
-                    dest: 'dist/assets/v2/images/' // Destination path prefix
+                    dest: 'dist/assets/images/' // Destination path prefix
                 }]
             },
 
@@ -190,16 +190,16 @@
           scripts: {
             files: [{
               expand: true,
-              cwd: 'src/assets/v2/js/',
+              cwd: 'src/assets/js/',
               src: '*.js',
-              dest: 'dist/assets/v2/js/'
+              dest: 'dist/assets/js/'
             }]
           }
         },
 
         //clean folder - remove old files under production - dist
         clean: [
-            "dist/assets/v2/css/",
+            "dist/assets/css/",
             "dist/**/*.{html,xml}"
         ]
     });
