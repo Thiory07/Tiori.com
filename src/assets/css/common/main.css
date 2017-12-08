@@ -1,3 +1,91 @@
+body {
+  background-color: #fff;
+  background-image: linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em; }
 
+.mt-3 {
+  margin-top: 60px; }
+
+.mt-2 {
+  margin-top: 40px; }
+
+.mt-1 {
+  margin-top: 20px; }
+
+.mb-3 {
+  margin-top: 60px; }
+
+.mb-2 {
+  margin-top: 40px; }
+
+.mb-1 {
+  margin-top: 20px; }
+
+.p-content {
+  padding: 25px; }
+
+.p-content-s {
+  padding: 15px; }
+
+.p-0 {
+  padding: 0 !important; }
+
+.bg-neutral-white {
+  background: #f3f3f3; }
+
+.bg-postit-helsinki-pink {
+  background: #fad2da; }
+
+.bg-postit-helsinki-yellow {
+  background: #fbf7ae; }
+
+.bg-postit-helsinki-blue-1 {
+  background: #dae3ea; }
+
+.bg-postit-helsinki-blue-1 {
+  background: #a9c6e8; }
+
+.bg-postit-helsinki-gray-1 {
+  background: #d6d4df; }
+
+.bg-postit-yellow {
+  background: #FFFFA5; }
+
+.bg-postit-green {
+  background: #00A00A; }
+
+.bg-postit-orange {
+  background: #F96604; }
+
+.bg-postit-blue-1 {
+  background: #149CCB; }
+
+.bg-postit-blue-2 {
+  background: #0CE6F9; }
+
+.blue-bic {
+  color: #284283; }
+
+.txt-center {
+  text-align: center; }
+
+.p-relative {
+  position: relative; }
+
+.p-fixed {
+  position: fixed; }
+
+.w-f {
+  width: 100%; }
+
+.postit {
+  float: right;
+  max-width: 115px;
+  width: 100%;
+  transition: all .25s ease 0s; }
+
+.postit:hover,
+.postit.active {
+  max-width: 130px; }
 
 /*# sourceMappingURL=main.css.map */

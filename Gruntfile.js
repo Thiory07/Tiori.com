@@ -22,7 +22,7 @@
                 'dist/{,*/}*.html',
                 'dist/assets/css/*.css',
                 'dist/assets/js/*.js',
-                'dist/assets/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+                'dist/assets/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
               ]
             },
             gruntfile: {
@@ -85,10 +85,10 @@
             },
             imagesV2:{
                 files: [
-                    'src/assets/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-                    'src/assets/images/**/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-                    'src/assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}',
-                    'src/assets/images/*.{png,jpg,jpeg,gif,webp,svg}'
+                    'src/assets/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+                    'src/assets/img/**/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+                    'src/assets/img/**/*.{png,jpg,jpeg,gif,webp,svg}',
+                    'src/assets/img/*.{png,jpg,jpeg,gif,webp,svg}'
                 ],
                 tasks: ['newer:imagemin'],
             },
@@ -178,9 +178,9 @@
             mainV2: {// Another target
                 files: [{
                     expand: true, // Enable dynamic expansion
-                    cwd: 'src/assets/images/',                // Src matches are relative to this path
+                    cwd: 'src/assets/img/',                // Src matches are relative to this path
                     src: ['**/*.{png,jpg,gif}'],// Actual patterns to match
-                    dest: 'dist/assets/images/' // Destination path prefix
+                    dest: 'dist/assets/img/' // Destination path prefix
                 }]
             },
 
