@@ -5,15 +5,6 @@ body{
   background-size: 100% 1.2em;
 }
 
-// Margin top
-.mt-3{ margin-top: 60px;}
-.mt-2{ margin-top: 40px;}
-.mt-1{ margin-top: 20px;}
-// Margin bottom
-.mb-3{ margin-top: 60px;}
-.mb-2{ margin-top: 40px;}
-.mb-1{ margin-top: 20px;}
-
 // Paddings
 .p-content{ padding: 25px;}
 .p-content-s{padding: 15px;}
@@ -36,17 +27,25 @@ body{
 //text
 .txt-center{ text-align: center;}
 .p-relative{position: relative;}
+.p-absolute{position: absolute;}
 .p-fixed{position: fixed;}
 
 .w-f{width: 100%;}
 
+
+
+
+//
+#menu {
+  top: 0;
+}
 .postit{
-  float: right;
-  max-width: 115px;
-  width: 100%;
-  transition:  all .25s ease 0s;
+  padding-top: 25px;
+  top: -25px;
+  display: inline-block;
+  transition: all .25s;
 }
 .postit:hover,
 .postit.active{
-  max-width: 130px;
+  top: 0;
 }
