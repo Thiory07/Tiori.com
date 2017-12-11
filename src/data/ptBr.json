@@ -17,7 +17,20 @@
           "url": "contact",
           "color": "bg-postit-orange"
         }
-      ]
+      ],
+      "pages": [{
+        "title": "All about me",
+        "body": [
+          "Hello, let me introduce myself, my name is <strong>Ricardo Gimenes Ferreira</strong>.<br>Nice to meet you.",
+  			"I am a Brazilian computer programmer that works mainly with small websites and blogs, usually developing the whole code in PHP or ASP, as my main backend language, and as you can see, I am not that good with the layout when I try to develop alone, but I am trying to improve.",
+  			"One of my dreams is living in abroad, leaving Brazil for a while, it is a nice place here, but there are a lot of problems that most other countries have solved, I want to live new problems and come back with better solutions for the old ones, if I come back someday, for now I am dreaming of living in the UK, in London, since I have relatives there it would be an easier start.",
+        "My main hoby is playing music, bass is my favorite musical insturment, but I know how to play the jews harp, the kalimba and other small instruments, you can follow me on <a href=\"//www.instagram.com/tioriinsta/\">instagram</a>, <a href=\"//www.facebook.com/gimenesferreira\">facebook</a> or on <a href=\"\">youtube</a>, I regularly post a few videos of me trying to play these amazing instruments.",
+        "Other thing that I like a lot is learning languages and conecting with people, I know how to speak Spanish, English, Japanese, Danish, Dutch, Russian, French, Italian and Portuguese(being my native language), so since I know how to speak those languages I tried to make a multilanguage website."],
+        "img": {
+          "src": "assets/img/thiory-drawing.png",
+          "alt": "My drawing of me"
+        }
+      }]
     }
   }
 }

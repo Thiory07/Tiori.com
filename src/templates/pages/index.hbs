@@ -8,70 +8,69 @@ title: "Tiori Homepage"
 ---
 <div class="container">
   <div id="menu" class="p-fixed mb-5">
-
     {{#each ptBr.content.menu}}
     <a href="#{{this.url}}" class="blue-bic postit p-relative {{#if @first}}active{{/if}} {{this.color}}">
       <div id="menu-{{this.name}}"    class=" p-content-s">
-      {{this.name}}
+        {{this.name}}
       </div>
     </a>
     {{/each}}
   </div>
 </div>
-
 <div class="container mt-5 p-content">
   <div class="row mt-5">
     <div  class="col-sm-12 p-0 p-relative">
-
     </div>
-
     <div class="col-sm-12 bg-neutral-white">
       <div class="p-content">
+        {{#with ptBr.content.pages.[0] }}
         <section id="about" class="site-section">
-  			<!-- Information about me -->
-  			<h1 id="homeTitle">All about me</h1>
-  			<!-- set a figure to be 100% width on small devices and
-  					4/12 on bigger devices -->
-
-        <figure class="col-xs-12 col-md-4 pull-right drawing-thumb ">
-  				<img src="{{assets}}/img/thiory-drawing.png" alt="A drawing of Tio Ri">
-  				<figcaption id="figCaption">My drawing of myself</figcaption>
-  			</figure>
-  		</section>
-      <section id="projects" class="site-section" style="display: block;">
-			<!-- I hope to be posting a few experiments here soon, but for now I'll only give my github reference -->
-			<h1 id="experimentsTitle">My experiments with HTML, CSS and Javascript</h1>
-
-			<p id="experimentsText">Coming soon. But you can follow a few codes I developed on GitHub</p>
-			<a href="//github.com/Thiory07" target="_blank"><i class="fa fa-github big-icon"></i></a>
-
-		</section>
-    <section id="contact" class="site-section" >
-			<h1 id="contactTitle">More ways to talk to me</h1>
-			<p id="contactText">Here are the social networks that I have an account, and also my email and phone.</p>
-			<div id="social-networks">
-				<a href="//www.facebook.com/gimenesferreira"><i class="fa fa-facebook"></i></a>
-				<a href="//www.instagram.com/tioriinsta/" target="_blank"><i class="fa fa-instagram"></i></a>
-				<a href="//www.linkedin.com/in/ricardo-gimenes-ferreira-46103a63" target="_blank"><i class="fa fa-linkedin"></i></a>
-				<a href="//www.youtube.com/channel/UCi_3aroGaYutkCUEZBNdVXA" target="_blank"><i class="fa fa-youtube"></i></a>
-				<a href="//twitter.com/Thiory_" target="_blank"></a><i class="fa fa-twiter"></i>
-				<a href="//github.com/Thiory07" target="_blank"><i class="fa fa-github"></i></a>
-
-			</div>
-
-			<div class="email-and-phone">
-				<p><i class="fa fa-phone"></i> +55 11 9 8983 2481</p>
-				<p><i class="fa fa-mail"></i> <a href="mailto:gimenesferreira@gmail.com">gimenesferreira@gmail.com</a></p>
-			</div>
-		</section>
+          <!-- Information about me -->
+          <h1 id="homeTitle">{{this.title}}</h1>
+          {{#each this.body }}
+          <p>{{{this}}}</p>
+          {{/each}}
+          <figure class="col-xs-12 col-md-4 pull-right drawing-thumb ">
+            <img src="{{this.img.src}}" alt="{{this.img.alt}}">
+            <figcaption id="figCaption">{{this.img.alt}}</figcaption>
+          </figure>
+        </section>
+        {{/with}}
+        <section id="projects" class="site-section" style="display: block;">
+          <!-- I hope to be posting a few experiments here soon, but for now I'll only give my github reference -->
+          <h1 id="experimentsTitle">My experiments with HTML, CSS and Javascript</h1>
+          <h2>Code experiments</h2>
+          <ul>
+            <li><a target="_blank" href="/tests/Me">Try of making me in html and CSS only</a></li>
+            <li><a target="_blank" href="/tests/perspective-slider"> Simple perspective slider</a></li>
+          </ul>
+          <h2>My blogs</h2>
+          <ul>
+            <li><a href="/diario">My diary</a> </li>
+            <li><a href="/series">What I think about TV Series</a> </li>
+          </ul>
+          <p id="experimentsText">More coming soon. But you can follow a few codes I developed on GitHub</p>
+          <a href="//github.com/Thiory07" target="_blank"><i class="fa fa-github big-icon"></i></a>
+        </section>
+        <section id="contact" class="site-section" >
+          <h1 id="contactTitle">More ways to talk to me</h1>
+          <p id="contactText">Here are the social networks that I have an account, and also my email and phone.</p>
+          <div id="social-networks">
+            <a href="//www.facebook.com/gimenesferreira"><i class="fa fa-facebook"></i></a>
+            <a href="//www.instagram.com/tioriinsta/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="//www.linkedin.com/in/ricardo-gimenes-ferreira-46103a63" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="//www.youtube.com/channel/UCi_3aroGaYutkCUEZBNdVXA" target="_blank"><i class="fa fa-youtube"></i></a>
+            <a href="//twitter.com/Thiory_" target="_blank"></a><i class="fa fa-twiter"></i>
+            <a href="//github.com/Thiory07" target="_blank"><i class="fa fa-github"></i></a>
+          </div>
+          <div class="email-and-phone">
+            <p><i class="fa fa-phone"></i> +55 11 9 8983 2481</p>
+            <p><i class="fa fa-mail"></i> <a href="mailto:gimenesferreira@gmail.com">gimenesferreira@gmail.com</a></p>
+          </div>
+        </section>
       </div>
     </div>
     <div class="col-sm-1">
-
     </div>
   </div>
-
-
-
-
 </div>
