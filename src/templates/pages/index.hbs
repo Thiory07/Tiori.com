@@ -9,7 +9,7 @@ title: "Tiori Homepage"
 <div class="container">
   <div id="menu" class="p-fixed mb-5">
     {{#each ptBr.content.menu}}
-    <a href="#{{this.url}}" class="blue-bic postit p-relative {{#if @first}}active{{/if}} {{this.color}}">
+    <a href="#{{this.url}}" class="blue-bic postit p-relative js-menu-item {{#if @first}}active{{/if}} {{this.color}}">
       <div id="menu-{{this.name}}"    class=" p-content-s">
         {{this.name}}
       </div>
@@ -17,8 +17,8 @@ title: "Tiori Homepage"
     {{/each}}
   </div>
 </div>
-<div class="container mt-5 p-content">
-  <div class="row mt-5">
+<div class="container mt-5 p-content  mb-5">
+  <div class="row mt-5 mb-5">
     <div  class="col-sm-12 p-0 p-relative">
     </div>
     <div class="col-sm-12 bg-neutral-white">
@@ -41,7 +41,7 @@ title: "Tiori Homepage"
           <h1 id="experimentsTitle">My experiments with HTML, CSS and Javascript</h1>
           <h2>Code experiments</h2>
           <ul>
-            <li><a target="_blank" href="/tests/Me">Try of making me in html and CSS only</a></li>
+            <li><a target="_blank" href="/tests/Me">Self portrait in html and css</a></li>
             <li><a target="_blank" href="/tests/perspective-slider"> Simple perspective slider</a></li>
           </ul>
           <h2>My blogs</h2>
@@ -74,3 +74,5 @@ title: "Tiori Homepage"
     </div>
   </div>
 </div>
+
+<div class="mb-5 mt-5" style="height:600px;"></div>

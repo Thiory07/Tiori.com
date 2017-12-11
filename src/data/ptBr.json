@@ -4,7 +4,7 @@
       "menu": [
         {
           "name": "Sobre",
-          "url": "contact",
+          "url": "about",
           "color": "bg-postit-helsinki-yellow"
         },
         {
