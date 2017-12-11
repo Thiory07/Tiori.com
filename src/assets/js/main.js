@@ -1,4 +1,5 @@
-$("#menu").on( "click", ".js-menu-item" , function(e) {
+$(function() {
+  $("#menu").on( "click", ".js-menu-item" , function(e) {
   e.preventDefault();
 
   var id = $(this).attr("href");
@@ -6,4 +7,5 @@ $("#menu").on( "click", ".js-menu-item" , function(e) {
   $('html, body').animate({
           scrollTop: $(id).offset().top - 100
       }, 600);
+});
 });
