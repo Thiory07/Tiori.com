@@ -1,0 +1,23 @@
+{
+  "ptBr": {
+    "content": {
+      "menu": [
+        {
+          "name": "About",
+          "url": "contact",
+          "color": "bg-postit-helsinki-yellow" 
+        },
+        {
+          "name": "Projects",
+          "url": "projects",
+          "color": "bg-postit-helsinki-pink"
+        },
+        {
+          "name": "Contact",
+          "url": "contact",
+          "color": "bg-postit-orange"
+        }
+      ]
+    }
+  }
+}
