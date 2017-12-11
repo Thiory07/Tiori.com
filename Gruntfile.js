@@ -243,8 +243,9 @@
 
   grunt.registerTask('build', [
       'assemble',
-      //'imagemin',
+      'imagemin',
       'sass',
-      'cssmin'
+      'cssmin',
+      'htmlmin'
   ]);
 };

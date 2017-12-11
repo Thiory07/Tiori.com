@@ -18,7 +18,8 @@
           "color": "bg-postit-orange"
         }
       ],
-      "pages": [{
+      "pages": {
+        "about":{
         "title": "All about me",
         "body": [
           "Hello, let me introduce myself, my name is <strong>Ricardo Gimenes Ferreira</strong>.<br>Nice to meet you.",
@@ -30,7 +31,8 @@
           "src": "assets/img/thiory-drawing.png",
           "alt": "My drawing of me"
         }
-      }]
+        }
+      }
     }
   }
 }
