@@ -3,17 +3,17 @@
     "content": {
       "menu": [
         {
-          "name": "Sobre",
+          "name": "About",
           "url": "contact",
-          "color": "bg-postit-helsinki-yellow"
+          "color": "bg-postit-helsinki-yellow" 
         },
         {
-          "name": "Projetos",
+          "name": "Projects",
           "url": "projects",
           "color": "bg-postit-helsinki-pink"
         },
         {
-          "name": "Contato",
+          "name": "Contact",
           "url": "contact",
           "color": "bg-postit-orange"
         }
