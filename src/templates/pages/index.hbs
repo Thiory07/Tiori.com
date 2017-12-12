@@ -8,7 +8,7 @@ title: "Tiori Homepage"
 ---
 <div class="container">
   <div id="menu" class="p-fixed mb-5">
-    {{#each ptBr.content.menu}}
+    {{#each enUs.content.menu}}
     <a href="#{{this.url}}" class="blue-bic postit p-relative js-menu-item {{#if @first}}active{{/if}} {{this.color}}">
       <div id="menu-{{this.name}}"    class=" p-content-s">
         {{this.name}}
@@ -23,7 +23,7 @@ title: "Tiori Homepage"
     </div>
     <div class="col-sm-12 bg-neutral-white">
       <div class="p-content">
-        {{#with ptBr.content.pages.about }}
+        {{#with enUs.content.pages.about }}
         <section id="about" class="site-section mb-5">
           <!-- Information about me -->
           <h1 id="homeTitle">{{this.title}}</h1>
@@ -38,7 +38,7 @@ title: "Tiori Homepage"
         </section>
         {{/with}}
 
-        {{#with ptBr.content.pages.projects }}
+        {{#with enUs.content.pages.projects }}
         <section id="projects" class="site-section mb-5" style="display: block;">
           <!-- I hope to be posting a few experiments here soon, but for now I'll only give my github reference -->
           <h1>{{this.title}}</h1>
@@ -48,7 +48,7 @@ title: "Tiori Homepage"
         </section>
         {{/with}}
 
-        {{#with ptBr.content.pages.contact }}
+        {{#with enUs.content.pages.contact }}
         <section id="contact" class="site-section mb-5" >
           <h1 id="contactTitle">{{this.title}}</h1>
           <p id="contactText">{{this.body.[0].content}}</p>
