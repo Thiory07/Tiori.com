@@ -1,11 +1,12 @@
 $(function() {
   $("#menu").on( "click", ".js-menu-item" , function(e) {
-  e.preventDefault();
+    e.preventDefault();
 
-  var id = $(this).attr("href");
-  console.log(id );
-  $('html, body').animate({
-          scrollTop: $(id).offset().top - 100
-      }, 600);
-});
+    var id = $(this).attr("href");
+    console.log(id );
+    $('html, body').animate({
+            scrollTop: $(id).offset().top - 100
+        }, 600);
+  });
+
 });
