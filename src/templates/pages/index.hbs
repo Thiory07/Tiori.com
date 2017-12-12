@@ -24,37 +24,34 @@ title: "Tiori Homepage"
     <div class="col-sm-12 bg-neutral-white">
       <div class="p-content">
         {{#with ptBr.content.pages.about }}
-        <section id="about" class="site-section">
+        <section id="about" class="site-section mb-5">
           <!-- Information about me -->
           <h1 id="homeTitle">{{this.title}}</h1>
+          {{!-- content template --}}
           {{#each this.body }}
-          <p>{{{this}}}</p>
+            {{>bodyContent}}
           {{/each}}
-          <figure class="col-xs-12 col-md-4 pull-right drawing-thumb ">
-            <img src="{{this.img.src}}" alt="{{this.img.alt}}">
+          <figure class="col-xs-12 col-md-4 pull-right drawing-thumb txt-center">
+            <img src="{{this.img.src}}" alt="{{this.img.alt}}" class="img-fluid">
             <figcaption id="figCaption">{{this.img.alt}}</figcaption>
           </figure>
         </section>
         {{/with}}
-        <section id="projects" class="site-section" style="display: block;">
+
+        {{#with ptBr.content.pages.projects }}
+        <section id="projects" class="site-section mb-5" style="display: block;">
           <!-- I hope to be posting a few experiments here soon, but for now I'll only give my github reference -->
-          <h1 id="experimentsTitle">My experiments with HTML, CSS and Javascript</h1>
-          <h2>Code experiments</h2>
-          <ul>
-            <li><a target="_blank" href="/tests/Me">Self portrait in html and css</a></li>
-            <li><a target="_blank" href="/tests/perspective-slider"> Simple perspective slider</a></li>
-          </ul>
-          <h2>My blogs</h2>
-          <ul>
-            <li><a href="/diario">My diary</a> </li>
-            <li><a href="/series">What I think about TV Series</a> </li>
-          </ul>
-          <p id="experimentsText">More coming soon. But you can follow a few codes I developed on GitHub</p>
-          <a href="//github.com/Thiory07" target="_blank"><i class="fa fa-github big-icon"></i></a>
+          <h1>{{this.title}}</h1>
+          {{#each this.body }}
+            {{>bodyContent}}
+          {{/each}}
         </section>
-        <section id="contact" class="site-section" >
-          <h1 id="contactTitle">More ways to talk to me</h1>
-          <p id="contactText">Here are the social networks that I have an account, and also my email and phone.</p>
+        {{/with}}
+
+        {{#with ptBr.content.pages.contact }}
+        <section id="contact" class="site-section mb-5" >
+          <h1 id="contactTitle">{{this.title}}</h1>
+          <p id="contactText">{{this.body.[0].content}}</p>
           <div id="social-networks">
             <a href="//www.facebook.com/gimenesferreira"><i class="fa fa-facebook"></i></a>
             <a href="//www.instagram.com/tioriinsta/" target="_blank"><i class="fa fa-instagram"></i></a>
@@ -68,6 +65,7 @@ title: "Tiori Homepage"
             <p><i class="fa fa-mail"></i> <a href="mailto:gimenesferreira@gmail.com">gimenesferreira@gmail.com</a></p>
           </div>
         </section>
+        {{/with}}
       </div>
     </div>
     <div class="col-sm-1">
@@ -75,4 +73,4 @@ title: "Tiori Homepage"
   </div>
 </div>
 
-<div class="mb-5 mt-5" style="height:600px;"></div>
+<div class="mb-5 mt-5" style="height:50px;"></div>

@@ -1,0 +1,10 @@
+{{!-- recursive loop through body content tags--}}
+{{#ifObject this.content}}
+  <{{this.tag}}>{{{this.content}}}</{{this.tag}}>
+{{else}}
+  <{{this.tag}}>
+    {{#each this.content}}
+      {{>bodyContent}}
+    {{/each}}
+  </{{this.tag}}>
+{{/ifObject}}

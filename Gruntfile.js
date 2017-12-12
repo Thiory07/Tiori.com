@@ -118,7 +118,8 @@
                 partials: ['<%= settings.src %>/templates/includes/**/*.hbs'],
                 layoutdir: 'src/templates/layouts/',
                 layout: 'template.hbs',
-                data: ['src/data/*.{json,yml}']
+                data: ['src/data/*.{json,yml}'],
+                helpers: ['src/helpers/*.js']
             },
             main: {
                 files: [
