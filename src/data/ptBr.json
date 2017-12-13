@@ -20,40 +20,40 @@
       ],
       "pages": {
         "about": {
-          "title": "All about me",
+          "title": "Tudo sobre mim",
           "body": [
             {
               "tag": "p",
-              "content": "Hello, let me introduce myself, my name is <strong>Ricardo Gimenes Ferreira<\/strong>.<br>Nice to meet you."
+              "content": "Olá, deixe-me apresentar-me, meu nome é <strong>Ricardo Gimenes Ferreira.</strong><br>Prazer em conhecê-lo."
             },
             {
               "tag": "p",
-              "content": "I am a Brazilian computer programmer that works mainly with small websites and blogs, usually developing the whole code in PHP or ASP, as my main backend language, and as you can see, I am not that good with the layout when I try to develop alone, but I am trying to improve."
+              "content": "Eu sou um programador brasileiro que trabalha principalmente com pequenos sites e blogs, geralmente desenvolvendo todo o código em PHP ou ASP, como linguagem backend principal, e como você pode ver, eu não sou tão bom com layouts quando tento desenvolver sozinho, mas estou tentando melhorar."
             },
             {
               "tag": "p",
-              "content": "One of my dreams is living abroad, leaving Brazil for a while, I want to face new problems and come back with good solutions for the old problems."
+              "content": "Um dos meus sonhoes é morar fora do país, deixar o Brasil por um tempo, eu quero enfrentar novos problemas e voltar com boas soluções para os problemas antigos."
             },
             {
               "tag": "p",
-              "content": "My main hobby is playing music, bass is my favorite musical insturment, but I know how to play the jews harp, the kalimba and other small instruments, you can follow me on <a href=\"//www.instagram.com/tioriinsta/\">instagram<\/a>, <a href=\"//www.facebook.com/gimenesferreira\">facebook<\/a> or on <a href=\"\">youtube<\/a>, I regularly post a few videos trying to play these amazing instruments."
+              "content": "Meu principal hobby é tocar musica, sendo baixo o meu instrumento favorito, mas eu sei tocar harpa de boca(berimbau de boca), kalimba e outros pequenos instrumentos, você pode me acompanhar no <a href=\"//www.instagram.com/tioriinsta/\">instagram<\/a>, <a href=\"//www.facebook.com/gimenesferreira\">facebook<\/a> ou on <a href=\"\">youtube<\/a>, eu normalmente posto tentativas de tocar esses instrumentos interessantes."
             },
             {
               "tag": "p",
-              "content": "Other thing that I like a lot is learning languages and conecting with people, I know how to speak Spanish, English, Japanese, Danish, Dutch, Russian, French, Italian and Portuguese(being my native language), so since I know how to speak those languages I tried to make a multilanguage website."
+              "content": "Outra coisa que gosto muito é aprender linguas e me conectar com pessoas, eu sei espanhol, inglês, japones, dinamarquês, holandês, russo, francês, italiano e portugues(minha lingua nativa), então como sei essas linguas estou criando um site multilinguas."
             }
           ],
           "img": {
             "src": "assets/img/thiory-drawing.png",
-            "alt": "My drawing of me"
+            "alt": "Meu desenho de mim mesmo"
           }
         },
         "projects": {
-          "title": "My experiments with HTML, CSS and Javascript",
+          "title": "Meus experimentos com HTML, CSS e Javascript",
           "body": [
             {
               "tag": "h2",
-              "content": "Code experiments"
+              "content": "Experimentos de código"
             },
             {
               "tag": "ul",
@@ -70,33 +70,33 @@
             },
             {
               "tag": "h2",
-              "content": "My blogs"
+              "content": "Meus blogs"
             },
             {
               "tag": "ul",
               "content": [
                 {
                   "tag": "li",
-                  "content": "<a href=\"/diario\">My diary</a>"
+                  "content": "<a href=\"/diario\">Meu diario</a>"
                 },
                 {
                   "tag": "li",
-                  "content": "<a href=\"/series\">What I think about TV Series</a> "
+                  "content": "<a href=\"/series\">O que eu penso sobre as séries</a> "
                 }
               ]
             },{
               "tag": "p",
-              "content": "More coming soon. But you can follow a few codes I developed on <a href=\"//github.com/Thiory07\" target=\"_blank\">GitHub<i class=\"fa fa-github big-icon\"></i></a>"
+              "content": "Em breve mais. Mas você pode seguir meus outros projetos no <a href=\"//github.com/Thiory07\" target=\"_blank\">GitHub<i class=\"fa fa-github big-icon\"></i></a>"
             }
           ]
 
         },
         "contact": {
-          "title": "More ways to talk to me",
+          "title": "Mais formas de falar comigo:",
           "body": [
             {
               "tag": "p",
-              "content": "Here are the social networks that I have an account, and also my email and phone."
+              "content": "Aqui estão as redes que eu tenho conta, e também meu email e telefone."
             }
           ]
         }

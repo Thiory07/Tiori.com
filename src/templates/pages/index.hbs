@@ -6,7 +6,7 @@ robots: "index, follow"
 canonical: ""
 title: "Tiori Homepage"
 ---
-<div class="container">
+<div class="container p-0">
   <div id="menu" class="p-fixed mb-5">
     {{#each enUs.content.menu}}
     <a href="#{{this.url}}" class="blue-bic postit p-relative js-menu-item {{#if @first}}active{{/if}} {{this.color}}">
@@ -15,9 +15,38 @@ title: "Tiori Homepage"
       </div>
     </a>
     {{/each}}
+
+    <div id="languages" class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="flag flag-en-us"></div>
+      </button>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#"><div class="float-left flag flag-en"></div> English</a>
+        <a class="dropdown-item" href="#"><div class="float-left flag flag-dk"></div> Dansk</a>
+        <a class="dropdown-item" href="#"><div class="float-left flag flag-es"></div> Español</a>
+        <a class="dropdown-item" href="#"><div class="float-left flag flag-fr"></div> Français</a>
+        <a class="dropdown-item" href="#"><div class="float-left flag flag-it"></div> Italiano</a>
+        <a class="dropdown-item" href="#"><div class="float-left flag flag-nl"></div> Nederlands</a>
+        <a class="dropdown-item" href="#"><div class="float-left flag flag-jp"></div> 日本語</a>
+        <a class="dropdown-item" href="#"><div class="float-left flag flag-pt"></div> Português</a>
+        <a class="dropdown-item" href="#"><div class="float-left flag flag-ru"></div> Русский</a>
+
+        <!--
+        English,
+        Dansk,
+        Nederlands,
+        Français
+        Italiano,
+        日本語,
+        Español,
+        Русский
+        Portuguese
+        -->
+      </div>
+    </div>
   </div>
 </div>
-<div class="container mt-5 p-content  mb-5">
+<div class="container mt-5 p-content mb-5 ">
   <div class="row mt-5 mb-5">
     <div  class="col-sm-12 p-0 p-relative">
     </div>

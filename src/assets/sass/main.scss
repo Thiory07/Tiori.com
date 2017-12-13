@@ -39,6 +39,13 @@ body{
 #menu {
   top: 0;
   z-index:9;
+  max-width: 100%;
+  width: 1140px;
+}
+#languages{
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .postit{
   padding-top: 25px;
@@ -50,3 +57,19 @@ body{
 .postit.active{
   top: 0;
 }
+#dropdownMenuButton{
+  cursor: pointer;
+}
+.flag{
+  background-image: url("/assets/img/flags.jpg");
+  width: 34px;
+  height: 24px;
+}
+.flag-dk {background-position: -102px 0;}
+.flag-es {background-position: -34px 0;}
+.flag-fr {background-position: -170px 0;}
+.flag-it {background-position: -204px 0;}
+.flag-fr {background-position: -136px 0;}
+.flag-jp {background-position: -68px 0;}
+.flag-pt {background-position: -238px 0;}
+.flag-ru {background-position: -272px 0;}
