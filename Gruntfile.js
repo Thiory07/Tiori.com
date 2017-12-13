@@ -212,6 +212,26 @@
               src: '*.js',
               dest: 'dist/assets/js/'
             }]
+          },
+          jsons: {
+            files: [{
+              expand: true,
+              cwd: 'src/data/',
+              src: '*.json',
+              dest: 'dist/assets/lang/'
+            }]
+          }
+        },
+        uglify: {
+          scripts: {
+            files: {
+              'dist/assets/js/main.min.js': ['src/assets/js/*.js'],
+            }
+          },
+        },
+        'json-minify': {
+          build: {
+            files: 'dist/assets/lang/*.json'
           }
         },
 
@@ -247,6 +267,9 @@
       'imagemin',
       'sass',
       'cssmin',
+      'copy:jsons',
+      'json-minify',
+      'uglify',
       'htmlmin'
   ]);
 };
