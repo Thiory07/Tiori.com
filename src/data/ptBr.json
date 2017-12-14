@@ -60,11 +60,11 @@
               "content": [
                 {
                   "tag": "li",
-                  "content": "<a target=\"_blank\" href=\"/tests/Me\">Self portrait in html and css</a>"
+                  "content": "<a target=\"_blank\" href=\"/tests/Me\">Autoretrato em html and css</a>"
                 },
                 {
                   "tag": "li",
-                  "content": "<a target=\"_blank\" href=\"/tests/perspective-slider\"> Simple perspective slider</a>"
+                  "content": "<a target=\"_blank\" href=\"/tests/perspective-slider\"> Slider simples em perspectiva</a>"
                 }
               ]
             },

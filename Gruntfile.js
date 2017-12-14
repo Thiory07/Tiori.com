@@ -92,6 +92,15 @@
                 ],
                 tasks: ['newer:imagemin'],
             },
+            uglify:{
+              files: [
+                  'src/assets/js/*.js',
+              ],
+              tasks: ['uglify'],
+            },htmlmin:{
+              files: ['dist/**/*.html'],
+              tasks: ['htmlmin']
+            }
         },
 
         //create a local connect server connecting on localhost with NodeJS
@@ -253,6 +262,8 @@
       'cssmin',
       'copy',
       'connect:livereload',
+      'json-minify',
+      'uglify',
       'htmlmin',
       'watch'
   ]);
