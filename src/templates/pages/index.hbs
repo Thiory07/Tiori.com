@@ -53,16 +53,16 @@ title: "Tiori Homepage"
     <div class="col-sm-12 bg-neutral-white">
       <div class="p-content">
         {{#with enUs.content.pages.about }}
-        <section id="about" class="site-section mb-5">
+        <section id="about" class="site-section mb-5 pt-3">
           <!-- Information about me -->
-          <h1 id="homeTitle">{{this.title}}</h1>
+          <h1 id="homeTitle" class="pt-1 pb-3">{{this.title}}</h1>
           {{!-- content template --}}
           <div class="js-content">
             {{#each this.body }}
               {{>bodyContent}}
             {{/each}}
           </div>
-          <figure class="col-xs-12 col-md-4 pull-right drawing-thumb txt-center">
+          <figure class="col-xs-12 col-md-4 pull-right drawing-thumb txt-center pt-5 mt-5">
             <img src="{{this.img.src}}" alt="{{this.img.alt}}" class="img-fluid">
             <figcaption id="figCaption">{{this.img.alt}}</figcaption>
           </figure>
@@ -70,10 +70,10 @@ title: "Tiori Homepage"
         {{/with}}
 
         {{#with enUs.content.pages.projects }}
-        <section id="projects" class="site-section mb-5" style="display: block;">
+        <section id="projects" class="site-section mb-5 pt-5" >
           <!-- I hope to be posting a few experiments here soon, but for now I'll only give my github reference -->
 
-          <h1>{{this.title}}</h1>
+          <h1 class="pt-1 pb-3">{{this.title}}</h1>
           <div class="js-content">
           {{#each this.body }}
             {{>bodyContent}}
@@ -83,8 +83,8 @@ title: "Tiori Homepage"
         {{/with}}
 
         {{#with enUs.content.pages.contact }}
-        <section id="contact" class="site-section mb-5" >
-          <h1 id="contactTitle">{{this.title}}</h1>
+        <section id="contact" class="site-section mb-5 pt-5" >
+          <h1 id="contactTitle" class="pt-1 pb-3">{{this.title}}</h1>
           <div class="js-content">
             <p id="contactText">{{this.body.[0].content}}</p>
           </div>
