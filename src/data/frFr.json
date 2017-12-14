@@ -1,0 +1,106 @@
+{
+  "enUs": {
+    "content": {
+      "menu": [
+        {
+          "name": "Sur moi",
+          "url": "about",
+          "color": "bg-postit-helsinki-yellow"
+        },
+        {
+          "name": "Projets",
+          "url": "projects",
+          "color": "bg-postit-helsinki-pink"
+        },
+        {
+          "name": "Contact",
+          "url": "contact",
+          "color": "bg-postit-orange"
+        }
+      ],
+      "pages": {
+        "about": {
+          "title": "Tout sur moi",
+          "body": [
+            {
+              "tag": "p",
+              "content": "Salut, laisse moi me présente , je m'appelle <strong>Ricardo Gimenes Ferreira<\/strong>.<br>Ravi de vous rencontrer."
+            },
+            {
+              "tag": "p",
+              "content": "Je suis un programmeur informatique brésilien qui travaille principalement avec de petits sites et blogs, développant généralement tout le code en PHP ou ASP comme ma langue backend principale, et comme vous pouvez le voir, je ne suis pas très bon avec la mise en page seul, mais j'essaie d'améliorer."
+            },
+            {
+              "tag": "p",
+              "content": "Un de mes rêves est de vivre à l'étranger, de quitter le Brésil pour un moment, je veux faire face à de nouveaux problèmes et revenir avec de bonnes solutions pour les vieux."
+            },
+            {
+              "tag": "p",
+              "content": "Mon hobby principal est de jouer de la musique, la basse est mon préféré instrument de musique, mais je sais jouer de la guimbarde, des kalimba et autres petits instruments, vous pouvez me suivre sur <a href=\"//www.instagram.com/tioriinsta/\">instagram<\/a>, <a href=\"//www.facebook.com/gimenesferreira\">facebook<\/a> ou sur <a href=\"\">youtube<\/a>, je publie régulièrement quelques vidéos essayant de jouer ces incroyables instruments."
+            },
+            {
+              "tag": "p",
+              "content": "Autre chose que j'aime beaucoup apprendre les langues et communiquer avec les gens, je sais parler anglais, danois, néerlandais, français, italien, japonais, espagnol, russe et portugais (étant ma langue maternelle), donc je sais comment parle les langues que j'ai essayé de faire un site web multilingue."
+            }
+          ],
+          "img": {
+            "src": "assets/img/thiory-drawing.png",
+            "alt": "Mon dessin de moi"
+          }
+        },
+        "projects": {
+          "title": "Mes expériences avec HTML, CSS et Javascript",
+          "body": [
+            {
+              "tag": "h2",
+              "content": "Expériences de code"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "<a target=\"_blank\" href=\"/tests/Me\">Autoportrait en html et css</a>"
+                },
+                {
+                  "tag": "li",
+                  "content": "<a target=\"_blank\" href=\"/tests/perspective-slider\"> Simple perspective slider</a>"
+                }
+              ]
+            },
+            {
+              "tag": "h2",
+              "content": "Mes blogs"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "<a href=\"/diario\">Mon journal(Anglais)</a>"
+                },
+                {
+                  "tag": "li",
+                  "content": "<a href=\"/series\">Ce que je pense de la série TV(Anglais)</a> "
+                }
+              ]
+            },{
+              "tag": "p",
+              "content": "Plus à venir bientôt. Mais vous pouvez suivre quelques codes que j'ai développés sur <a href=\"//github.com/Thiory07\" target=\"_blank\">GitHub<i class=\"fa fa-github big-icon\"></i></a>"
+            }
+          ]
+
+        },
+        "contact": {
+          "title": "Plus de façons de me trouver",
+          "body": [
+            {
+              "tag": "p",
+              "content": "Voici les réseaux sociaux que j'ai un compte, ainsi que mon email et mon téléphone."
+            }
+          ]
+        }
+      }
+    }
+  }
+}
