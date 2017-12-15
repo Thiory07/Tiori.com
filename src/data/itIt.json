@@ -1,5 +1,5 @@
 {
-  "enUs": {
+  "itIt": {
     "content": {
       "menu": [
         {
@@ -20,7 +20,7 @@
       ],
       "pages": {
         "about": {
-          "title": "All about me",
+          "title": "Tutto su di me",
           "body": [
             {
               "tag": "p",
@@ -32,71 +32,71 @@
             },
             {
               "tag": "p",
-              "content": "One of my dreams is living abroad, leaving Brazil for a while, I want to face new problems and come back with good solutions for the old problems."
+              "content": "Uno dei miei sogni è vivere all'estero, lasciare il Brasile per po, voglio affrontare nuovi problemi e tornare con buone soluzioni per i vecchi."
             },
             {
               "tag": "p",
-              "content": "My main hobby is playing music, bass is my favorite musical instrument, but I know how to play the jews harp, the kalimba and other small instruments, you can follow me on <a href=\"//www.instagram.com/tioriinsta/\">instagram<\/a>, <a href=\"//www.facebook.com/gimenesferreira\">facebook<\/a> or on <a href=\"\">youtube<\/a>, I regularly post a few videos trying to play these amazing instruments."
+              "content": "Il mio hobby principale è suonare la musica, il basso è il mio strumento musicale preferito, ma so suonare lo scacciapensieri(o il Marranzano), il kalimba e altri piccoli strumenti, puoi seguirmi su <a href=\"//www.instagram.com/tioriinsta/\">instagram<\/a>, <a href=\"//www.facebook.com/gimenesferreira\">facebook<\/a> o via <a href=\"\">youtube<\/a>, pubblico regolarmente alcuni video cercando di suonare questi fantastici strumenti."
             },
             {
               "tag": "p",
-              "content": "Other thing that I like a lot is learning languages and conecting with people, I know how to speak English, Danish, Dutch, French, Italian, Japanese, Spanish, Russian and Portuguese(being my native language), so since I know how to speak those languages I tried to make a multilanguage website."
+              "content": "Un'altra cosa che mi piace molto è imparare delle lingue e il collegamento con le persone, so come parlare inglese, danese, olandese, francese, italiano, giapponese, spagnolo, russo e portoghese (essendo la mia lingua madre), quindi poiché so come parlo quelle lingue che ho provato a creare un sito web multilingua."
             }
           ],
           "img": {
             "src": "assets/img/thiory-drawing.png",
-            "alt": "My drawing of me"
+            "alt": "Il mio disegno di me"
           }
         },
         "projects": {
-          "title": "My experiments with HTML, CSS and Javascript",
+          "title": "I miei esperimenti con HTML, CSS e Javascript",
           "body": [
             {
               "tag": "h2",
-              "content": "Code experiments"
+              "content": "Esperimenti di codice"
             },
             {
               "tag": "ul",
               "content": [
                 {
                   "tag": "li",
-                  "content": "<a target=\"_blank\" href=\"/tests/Me\">Self portrait in html and css</a>"
+                  "content": "<a target=\"_blank\" href=\"/tests/Me\">Autoritratto in html e css</a>"
                 },
                 {
                   "tag": "li",
-                  "content": "<a target=\"_blank\" href=\"/tests/perspective-slider\"> Simple perspective slider</a>"
+                  "content": "<a target=\"_blank\" href=\"/tests/perspective-slider\"> Semplice cursore di prospettiva</a>"
                 }
               ]
             },
             {
               "tag": "h2",
-              "content": "My blogs"
+              "content": "I miei blog"
             },
             {
               "tag": "ul",
               "content": [
                 {
                   "tag": "li",
-                  "content": "<a href=\"/diario\">My diary</a>"
+                  "content": "<a href=\"/diario\">Il mio diario (Inglese)</a>"
                 },
                 {
                   "tag": "li",
-                  "content": "<a href=\"/series\">What I think about TV Series</a> "
+                  "content": "<a href=\"/series\">Cosa penso delle serie di TV (Inglese)</a> "
                 }
               ]
             },{
               "tag": "p",
-              "content": "More coming soon. But you can follow a few codes I developed on <a href=\"//github.com/Thiory07\" target=\"_blank\">GitHub<i class=\"fa fa-github big-icon\"></i></a>"
+              "content": "Maggiori informazioni tra breve. Ma puoi seguire alcuni codici che ho sviluppato su <a href=\"//github.com/Thiory07\" target=\"_blank\">GitHub<i class=\"fa fa-github big-icon\"></i></a>"
             }
           ]
 
         },
         "contact": {
-          "title": "More ways to talk to me",
+          "title": "Altri modi per parlare con me",
           "body": [
             {
               "tag": "p",
-              "content": "Here are the social networks that I have an account, and also my email and phone."
+              "content": "Qui ci sono i social network che ho un account, e anche la mia email e il telefono."
             }
           ]
         }

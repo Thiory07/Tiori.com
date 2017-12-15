@@ -1,0 +1,106 @@
+{
+  "esEs": {
+    "content": {
+      "menu": [
+        {
+          "name": "Sobre",
+          "url": "about",
+          "color": "bg-postit-helsinki-yellow"
+        },
+        {
+          "name": "Proyectos",
+          "url": "projects",
+          "color": "bg-postit-helsinki-pink"
+        },
+        {
+          "name": "Contacto",
+          "url": "contact",
+          "color": "bg-postit-orange"
+        }
+      ],
+      "pages": {
+        "about": {
+          "title": "Todo sobre mi",
+          "body": [
+            {
+              "tag": "p",
+              "content": "Hola, déjame presentarme, mi nombre es <strong>Ricardo Gimenes Ferreira<\/strong>.<br>Encantado de conocerte."
+            },
+            {
+              "tag": "p",
+              "content": "Soy un programador brasileño que trabaja principalmente con sitios web y blogs pequeños, generalmente desarrollando todo el código en PHP o ASP, como mi principal lenguaje back-end, y como pueden ver, no soy tan bueno con el diseño cuando trato de desarrollar solo, pero estoy tratando de mejorar."
+            },
+            {
+              "tag": "p",
+              "content": "Uno de mis sueños es vivir en el extranjero, dejar Brasil por un tiempo, quiero enfrentar nuevos problemas y volver con buenas soluciones para los viejos."
+            },
+            {
+              "tag": "p",
+              "content": "Mi hobby principal es tocar música, el bajo es mi instrumento musical favorito, pero sé cómo tocar el arpa de boca, la kalimba y otros instrumentos pequeños, puedes seguirme en <a href=\"//www.instagram.com/tioriinsta/\">instagram<\/a>, <a href=\"//www.facebook.com/gimenesferreira\">facebook<\/a> o en <a href=\"\">youtube<\/a>, regularmente publico algunos videos tratando de tocar estos increíbles instrumentos.."
+            },
+            {
+              "tag": "p",
+              "content": "Otra cosa que me gusta mucho es aprender idiomas y conectarme con personas, sé cómo hablar inglés, danés, holandés, francés, italiano, japonés, español, ruso y portugués (siendo mi lengua materna), así que desde que sé cómo hablar esos idiomas Intenté hacer un sitio web multilenguaje."
+            }
+          ],
+          "img": {
+            "src": "assets/img/thiory-drawing.png",
+            "alt": "Mi dibujo de mí"
+          }
+        },
+        "projects": {
+          "title": "Mis experimentos con HTML, CSS y Javascript",
+          "body": [
+            {
+              "tag": "h2",
+              "content": "Experimentos de código"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "<a target=\"_blank\" href=\"/tests/Me\">Autorretrato en html y css</a>"
+                },
+                {
+                  "tag": "li",
+                  "content": "<a target=\"_blank\" href=\"/tests/perspective-slider\"> Deslizador de perspectiva simple</a>"
+                }
+              ]
+            },
+            {
+              "tag": "h2",
+              "content": "Mis blogs"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "<a href=\"/diario\">Mi diario (inglés)</a>"
+                },
+                {
+                  "tag": "li",
+                  "content": "<a href=\"/series\">Lo que pienso sobre la Serie de TV (inglés)</a> "
+                }
+              ]
+            },{
+              "tag": "p",
+              "content": "Más por venir, pero puedes seguir algunos códigos que desarrollé en <a href=\"//github.com/Thiory07\" target=\"_blank\">GitHub<i class=\"fa fa-github big-icon\"></i></a>"
+            }
+          ]
+
+        },
+        "contact": {
+          "title": "Más formas de hablar conmigo",
+          "body": [
+            {
+              "tag": "p",
+              "content": "Aquí están las redes sociales con las que tengo una cuenta, y también mi correo electrónico y mi teléfono."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

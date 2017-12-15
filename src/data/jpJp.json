@@ -1,0 +1,106 @@
+{
+  "jpJp": {
+    "content": {
+      "menu": [
+        {
+          "name": "私について",
+          "url": "about",
+          "color": "bg-postit-helsinki-yellow"
+        },
+        {
+          "name": "プロジェクト",
+          "url": "projects",
+          "color": "bg-postit-helsinki-pink"
+        },
+        {
+          "name": "連絡",
+          "url": "contact",
+          "color": "bg-postit-orange"
+        }
+      ],
+      "pages": {
+        "about": {
+          "title": "私について何でも",
+          "body": [
+            {
+              "tag": "p",
+              "content": "こんにちは、私自身を紹介させてください、私の名前は <strong>Ricardo Gimenes Ferreira<\/strong>.<br>はじめまして。"
+            },
+            {
+              "tag": "p",
+              "content": "私はブラジルのプログラマーで、主に小規模なウェブサイトやブログで働いています。 私の主要なバックエンド言語として、通常PHPやASPでコード全体を開発し、あなたが見ることができるように、私は単独で開発しようとするとレイアウトがうまくいかないが、改善しようとしている。"
+            },
+            {
+              "tag": "p",
+              "content": "私の夢の1つは海外に住んでいて、しばらくブラジルを残して、新しい問題に直面し、古い問題の良い解決策に戻ってきたい。"
+            },
+            {
+              "tag": "p",
+              "content": "主な趣味は音楽を演奏すること、ベースは私の好きな楽器です。 私はまた、Kohkin、kalimba、および他の小さな楽器を演奏する方法を知っています, あなたは私に従うことができます <a href=\"//www.instagram.com/tioriinsta/\">instagram<\/a>, <a href=\"//www.facebook.com/gimenesferreira\">facebook<\/a> または <a href=\"\">youtube<\/a>, 私は定期的にこれらの素晴らしい楽器を演奏しようとするビデオをいくつか投稿しています."
+            },
+            {
+              "tag": "p",
+              "content": "私が大好きなことは、言語を学び、人々と会話することです。私は英語、デンマーク語、オランダ語、フランス語、イタリア語、日本語、スペイン語、ロシア語、ポルトガル語（私の母国語）を話す方法を知っています。 多言語のウェブサイトを作ろうとした言語を話す。"
+            }
+          ],
+          "img": {
+            "src": "assets/img/thiory-drawing.png",
+            "alt": "私の私の描く"
+          }
+        },
+        "projects": {
+          "title": "私のHTML、CSS、Javascriptの実験",
+          "body": [
+            {
+              "tag": "h2",
+              "content": "コード実験"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "<a target=\"_blank\" href=\"/tests/Me\">HTMLとCSSのセルフポートレート</a>"
+                },
+                {
+                  "tag": "li",
+                  "content": "<a target=\"_blank\" href=\"/tests/perspective-slider\"> シンプルパースペクティブ</a>"
+                }
+              ]
+            },
+            {
+              "tag": "h2",
+              "content": "私のブログ"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "<a href=\"/diario\">私の日記</a>"
+                },
+                {
+                  "tag": "li",
+                  "content": "<a href=\"/series\">私がテレビシリーズについて考えること</a> "
+                }
+              ]
+            },{
+              "tag": "p",
+              "content": "もっと来る予定. あなたは私が <a href=\"//github.com/Thiory07\" target=\"_blank\">GitHub<i class=\"fa fa-github big-icon\"></i></a>で開発したいくつかのコードに従うことができます"
+            }
+          ]
+
+        },
+        "contact": {
+          "title": "私に話す他の方法",
+          "body": [
+            {
+              "tag": "p",
+              "content": "ここに私がアカウントを持っているソーシャルネットワークと私の電子メールと電話があります."
+            }
+          ]
+        }
+      }
+    }
+  }
+}
