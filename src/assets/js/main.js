@@ -16,16 +16,24 @@ var site= {
     }
 
     pageContent.innerHTML = innerContent;
-    anime.timeline({loop: false})
-      .add({
-        targets: '#'+pageId+' .js-content .letter',
-        opacity: [0,1],
-        easing: "easeInOutQuad",
-        duration: 150,
-        delay: function(el, i) {
-          return 2 * (i+1)
-        }
-      })
+    var children = $('#'+pageId+' .js-content').children();
+    console.log(children.length);
+    console.log(children[0].tagName.toLowerCase());
+    for (var i = 0; i < children.length; i++) {
+      var tag = children[i].tagName.toLowerCase();
+      var item = i+1;
+      anime.timeline({loop: false})
+        .add({
+          targets: '#'+pageId+' .js-content '+tag+':nth-child('+item+') .letter',
+          opacity: [0,1],
+          easing: "easeInOutQuad",
+          duration: 700,
+          delay: function(el, i) {
+            return 8 * (i+1)
+          }
+        })
+    }
+
   },
   writeContent: function(obj, lang){
     var content = obj[lang].content;
