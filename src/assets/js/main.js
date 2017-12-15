@@ -14,7 +14,18 @@ var site= {
     for (var i = 0; i < content.pages[pageId].body.length; i++) {
       innerContent += concatHtml (content.pages[pageId].body[i]);
     }
+
     pageContent.innerHTML = innerContent;
+    anime.timeline({loop: false})
+      .add({
+        targets: '.js-content .letter',
+        opacity: [0,1],
+        easing: "easeInOutQuad",
+        duration: 12,
+        delay: function(el, i) {
+          return 1 * (i+1)
+        }
+      })
   },
   writeContent: function(obj, lang){
     var content = obj[lang].content;
@@ -38,7 +49,20 @@ var site= {
 function concatHtml (obj) {
   var string = "";
   if (typeof obj.content === "string") {
-    string = "<" +  obj.tag + ">"+ obj.content+ "</"+obj.tag+">";
+    var str = obj.content ;
+    var c = "";
+    var isTag = false;
+    for (var i = 0, len = str.length; i < len; i++) {
+      if (str.charAt(i) == "<") { isTag = true; }
+      if (!isTag) {
+          c += "<span class='letter'>"+ (str.charAt(i)) + "</span>";
+          //c +=str.charAt(i);
+      }else{
+        c +=str.charAt(i);
+      }
+      if (str.charAt(i) == ">") { isTag = false; }
+    }
+    string = "<" +  obj.tag + ">"+ c+ "</"+obj.tag+">";
   }else{
     string = "<" +  obj.tag + ">";
     for (var i = 0; i < obj.content.length; i++) {
