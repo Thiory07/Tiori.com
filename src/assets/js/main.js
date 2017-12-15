@@ -77,7 +77,7 @@ $(function() {
       site.startSpinner();
       $.getJSON('/assets/lang/'+lang+'.json', function(data) {
         site.stopSpinner();
-         languages[lang] =data;
+         languages[lang] = data;
          site.writeContent(languages[lang], lang);
       });
       //
