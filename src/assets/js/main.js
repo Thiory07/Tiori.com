@@ -3,6 +3,19 @@ var languages = {};
 var site= {
   startSpinner: function(){},
   stopSpinner: function(){},
+  _writePage: function(pageId, content){
+    var page = document.getElementById(pageId);
+    var pageTitle = page.querySelector('h1');
+    var pageContent = page.querySelector('.js-content');
+    var innerContent = "";
+    console.log(pageId);
+    pageTitle.innerHTML = content.pages[pageId].title;
+
+    for (var i = 0; i < content.pages[pageId].body.length; i++) {
+      innerContent += concatHtml (content.pages[pageId].body[i]);
+    }
+    pageContent.innerHTML = innerContent;
+  },
   writeContent: function(obj, lang){
     var content = obj[lang].content;
     var divs = document.querySelectorAll('.js-menu-item');
@@ -10,40 +23,15 @@ var site= {
     for (var i = 0; i < divs.length; i++) {
         divs[i].querySelector('div').innerHTML = content.menu[i].name;
     }
-    // About page
-    var about = document.getElementById('about');
-    var aboutTitle = about.querySelector('h1');
-    var aboutContent = about.querySelector('.js-content');
-    var innerContent = "";
+    //figure
     var figCaption = about.querySelector('#figCaption');
-    aboutTitle.innerHTML = content.pages.about.title;
     figCaption.innerHTML = content.pages.about.img.alt;
-    for (var i = 0; i < content.pages.about.body.length; i++) {
-      innerContent += concatHtml (content.pages.about.body[i]);
-    }
-    aboutContent.innerHTML = innerContent;
-
+    // About page
+    this._writePage('about', content);
     // Projects page
-    var projects = document.getElementById('projects');
-    var projectsTitle = projects.querySelector('h1');
-    var projectsContent = projects.querySelector('.js-content');
-    var innerContent = "";
-    projectsTitle.innerHTML = content.pages.projects.title;
-    for (var i = 0; i < content.pages.projects.body.length; i++) {
-      innerContent += concatHtml (content.pages.projects.body[i]);
-    }
-    projectsContent.innerHTML = innerContent;
-
+    this._writePage('projects', content);
     // Contact page
-    var contact = document.getElementById('contact');
-    var contactTitle = contact.querySelector('h1');
-    var contactContent = contact.querySelector('.js-content');
-    var innerContent = "";
-    contactTitle.innerHTML = content.pages.contact.title;
-    for (var i = 0; i < content.pages.contact.body.length; i++) {
-      innerContent += concatHtml (content.pages.contact.body[i]);
-    }
-    contactContent.innerHTML = innerContent;
+    this._writePage('contact', content);
   }
 }
 
