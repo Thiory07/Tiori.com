@@ -1,0 +1,106 @@
+{
+  "enUs": {
+    "content": {
+      "menu": [
+        {
+          "name": "About",
+          "url": "about",
+          "color": "bg-postit-helsinki-yellow"
+        },
+        {
+          "name": "Projects",
+          "url": "projects",
+          "color": "bg-postit-helsinki-pink"
+        },
+        {
+          "name": "Contact",
+          "url": "contact",
+          "color": "bg-postit-orange"
+        }
+      ],
+      "pages": {
+        "about": {
+          "title": "All about me",
+          "body": [
+            {
+              "tag": "p",
+              "content": "Ciao, mi presento, il mio nome è <strong>Ricardo Gimenes Ferreira<\/strong>.<br>Piacere di conoscerti."
+            },
+            {
+              "tag": "p",
+              "content": "Sono un programmatore brasiliano che lavora principalmente con i piccoli siti Web e blog, di solito lo sviluppo dell'intero codice in PHP o ASP, come mio principale linguaggio di back-end e, come puoi vedere, non sono così bravo con il layout quando cerco di sviluppare da solo, ma sto cercando di migliorare."
+            },
+            {
+              "tag": "p",
+              "content": "One of my dreams is living abroad, leaving Brazil for a while, I want to face new problems and come back with good solutions for the old problems."
+            },
+            {
+              "tag": "p",
+              "content": "My main hobby is playing music, bass is my favorite musical instrument, but I know how to play the jews harp, the kalimba and other small instruments, you can follow me on <a href=\"//www.instagram.com/tioriinsta/\">instagram<\/a>, <a href=\"//www.facebook.com/gimenesferreira\">facebook<\/a> or on <a href=\"\">youtube<\/a>, I regularly post a few videos trying to play these amazing instruments."
+            },
+            {
+              "tag": "p",
+              "content": "Other thing that I like a lot is learning languages and conecting with people, I know how to speak English, Danish, Dutch, French, Italian, Japanese, Spanish, Russian and Portuguese(being my native language), so since I know how to speak those languages I tried to make a multilanguage website."
+            }
+          ],
+          "img": {
+            "src": "assets/img/thiory-drawing.png",
+            "alt": "My drawing of me"
+          }
+        },
+        "projects": {
+          "title": "My experiments with HTML, CSS and Javascript",
+          "body": [
+            {
+              "tag": "h2",
+              "content": "Code experiments"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "<a target=\"_blank\" href=\"/tests/Me\">Self portrait in html and css</a>"
+                },
+                {
+                  "tag": "li",
+                  "content": "<a target=\"_blank\" href=\"/tests/perspective-slider\"> Simple perspective slider</a>"
+                }
+              ]
+            },
+            {
+              "tag": "h2",
+              "content": "My blogs"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "<a href=\"/diario\">My diary</a>"
+                },
+                {
+                  "tag": "li",
+                  "content": "<a href=\"/series\">What I think about TV Series</a> "
+                }
+              ]
+            },{
+              "tag": "p",
+              "content": "More coming soon. But you can follow a few codes I developed on <a href=\"//github.com/Thiory07\" target=\"_blank\">GitHub<i class=\"fa fa-github big-icon\"></i></a>"
+            }
+          ]
+
+        },
+        "contact": {
+          "title": "More ways to talk to me",
+          "body": [
+            {
+              "tag": "p",
+              "content": "Here are the social networks that I have an account, and also my email and phone."
+            }
+          ]
+        }
+      }
+    }
+  }
+}
