@@ -62,6 +62,7 @@ $(function() {
 
   // Language menu behavior
   $("#languages").on("click", ".js-flag-item", function(e) {
+    e.preventDefault();
     var lang = $(this).attr('data-lang');
     var flag = $(this).attr('data-flag');
     var mainFlag = $('#main-flag');
