@@ -18,12 +18,12 @@ var site= {
     pageContent.innerHTML = innerContent;
     anime.timeline({loop: false})
       .add({
-        targets: '.js-content .letter',
+        targets: '#'+pageId+' .js-content .letter',
         opacity: [0,1],
         easing: "easeInOutQuad",
-        duration: 12,
+        duration: 150,
         delay: function(el, i) {
-          return 1 * (i+1)
+          return 2 * (i+1)
         }
       })
   },
