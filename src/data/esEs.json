@@ -20,7 +20,7 @@
       ],
       "pages": {
         "intro":{
-          "title": "Bienvenido",
+          "title": "Bienvenido!",
           "body": [{
             "tag": "p",
             "content": "Hola, déjame presentarme, mi nombre es <strong>Ricardo Gimenes Ferreira<\/strong>."
