@@ -19,17 +19,21 @@
         }
       ],
       "pages": {
+        "intro": {
+          "title": "Welkom",
+          "body": [{
+            "tag": "p",
+            "content": "Hallo, laat me mezelf voorstellen, mijn naam is <strong>Ricardo Gimenes Ferreira<\/strong>."
+          },
+          {
+            "tag": "p",
+            "content": "Ik ben een Braziliaanse programmeur die voornamelijk met kleine websites en blogs werkt,<br>Leuk je te ontmoeten."
+          }]
+        },
         "about": {
           "title": "Alles over mij",
           "body": [
-            {
-              "tag": "p",
-              "content": "Hallo, laat me mezelf voorstellen, mijn naam is <strong>Ricardo Gimenes Ferreira<\/strong>.<br>Leuk je te ontmoeten."
-            },
-            {
-              "tag": "p",
-              "content": "Ik ben een Braziliaanse programmeur die voornamelijk met kleine websites en blogs werkt, meestal ontwikkel ik de hele code in PHP of ASP, als mijn belangrijkste backend-taal, en zoals je ziet, ben ik niet zo goed met de lay-out wanneer ik alleen probeer te ontwikkelen, maar ik probeer te verbeteren."
-            },
+
             {
               "tag": "p",
               "content": "Een van mijn dromen is in het buitenland wonen, Brazilië een tijdje verlaten, ik wil nieuwe problemen onder ogen zien en kom terug met goede oplossingen voor de oude problemen."
@@ -42,11 +46,7 @@
               "tag": "p",
               "content": "Verder vind ik het leuk om talen te leren en met mensen om te gaan, ik kan Engels, Deens, Nederlands, Frans, Italiaans, Japans, Spaans, Russisch en Portugees spreken (mijn moedertaal zijn), dus omdat ik weet hoe ik moet spreek die talen die ik heb geprobeerd om een meertalige website te maken."
             }
-          ],
-          "img": {
-            "src": "assets/img/thiory-drawing.png",
-            "alt": "Mijn tekening van mij"
-          }
+          ]
         },
         "projects": {
           "title": "Mijn experimenten met HTML, CSS en Javascript",
@@ -88,7 +88,11 @@
               "tag": "p",
               "content": "Binnenkort meer. Maar je kunt een paar codes volgen die ik heb ontwikkeld op <a href=\"//github.com/Thiory07\" target=\"_blank\">GitHub<i class=\"fa fa-github big-icon\"></i></a>"
             }
-          ]
+          ],
+          "img": {
+            "src": "assets/img/thiory-drawing.png",
+            "alt": "Mijn tekening van mij"
+          }
 
         },
         "contact": {

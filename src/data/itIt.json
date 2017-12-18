@@ -19,17 +19,21 @@
         }
       ],
       "pages": {
-        "about": {
-          "title": "Tutto su di me",
+        "intro":{
+          "title": "Benvenuto",
           "body": [
             {
               "tag": "p",
-              "content": "Ciao, mi presento, il mio nome è <strong>Ricardo Gimenes Ferreira<\/strong>.<br>Piacere di conoscerti."
+              "content": "Ciao, mi presento, il mio nome è <strong>Ricardo Gimenes Ferreira<\/strong>."
             },
             {
               "tag": "p",
-              "content": "Sono un programmatore brasiliano che lavora principalmente con i piccoli siti Web e blog, di solito lo sviluppo dell'intero codice in PHP o ASP, come mio principale linguaggio di back-end e, come puoi vedere, non sono così bravo con il layout quando cerco di sviluppare da solo, ma sto cercando di migliorare."
-            },
+              "content": "Sono un programmatore brasiliano che lavora principalmente con i piccoli siti Web e blog. <br>Piacere di conoscerti."
+            }]
+        },
+        "about": {
+          "title": "Tutto su di me",
+          "body": [
             {
               "tag": "p",
               "content": "Uno dei miei sogni è vivere all'estero, lasciare il Brasile per po, voglio affrontare nuovi problemi e tornare con buone soluzioni per i vecchi."
@@ -42,11 +46,7 @@
               "tag": "p",
               "content": "Un'altra cosa che mi piace molto è imparare delle lingue e il collegamento con le persone, so come parlare inglese, danese, olandese, francese, italiano, giapponese, spagnolo, russo e portoghese (essendo la mia lingua madre), quindi poiché so come parlo quelle lingue che ho provato a creare un sito web multilingua."
             }
-          ],
-          "img": {
-            "src": "assets/img/thiory-drawing.png",
-            "alt": "Il mio disegno di me"
-          }
+          ]
         },
         "projects": {
           "title": "I miei esperimenti con HTML, CSS e Javascript",
@@ -88,7 +88,11 @@
               "tag": "p",
               "content": "Maggiori informazioni tra breve. Ma puoi seguire alcuni codici che ho sviluppato su <a href=\"//github.com/Thiory07\" target=\"_blank\">GitHub<i class=\"fa fa-github big-icon\"></i></a>"
             }
-          ]
+          ],
+          "img": {
+            "src": "assets/img/thiory-drawing.png",
+            "alt": "Il mio disegno di me"
+          }
 
         },
         "contact": {

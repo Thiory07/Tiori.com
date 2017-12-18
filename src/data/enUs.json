@@ -3,14 +3,14 @@
     "content": {
       "menu": [
         {
-          "name": "About",
-          "url": "about",
-          "color": "bg-postit-helsinki-yellow"
-        },
-        {
           "name": "Projects",
           "url": "projects",
           "color": "bg-postit-helsinki-pink"
+        },
+        {
+          "name": "About",
+          "url": "about",
+          "color": "bg-postit-helsinki-yellow"
         },
         {
           "name": "Contact",
@@ -19,17 +19,20 @@
         }
       ],
       "pages": {
+        "intro":{
+          "title": "Welcome!",
+          "body": [{
+            "tag": "p",
+            "content": "Hello, let me introduce myself, my name is <strong>Ricardo Gimenes Ferreira<\/strong>."
+          },
+          {
+            "tag": "p",
+            "content": "I am a Brazilian computer programmer that works mainly with small websites and blogs.<br>Nice to meet you."
+          }]
+        },
         "about": {
           "title": "All about me",
           "body": [
-            {
-              "tag": "p",
-              "content": "Hello, let me introduce myself, my name is <strong>Ricardo Gimenes Ferreira<\/strong>.<br>Nice to meet you."
-            },
-            {
-              "tag": "p",
-              "content": "I am a Brazilian computer programmer that works mainly with small websites and blogs, usually developing the whole code in PHP or ASP, as my main backend language, and as you can see, I am not that good with the layout when I try to develop alone, but I am trying to improve."
-            },
             {
               "tag": "p",
               "content": "One of my dreams is living abroad, leaving Brazil for a while, I want to face new problems and come back with good solutions for the old problems."
@@ -42,11 +45,7 @@
               "tag": "p",
               "content": "Other thing that I like a lot is learning languages and conecting with people, I know how to speak English, Danish, Dutch, French, Italian, Japanese, Spanish, Russian and Portuguese(being my native language), so since I know how to speak those languages I tried to make a multilanguage website."
             }
-          ],
-          "img": {
-            "src": "assets/img/thiory-drawing.png",
-            "alt": "My drawing of me"
-          }
+          ]
         },
         "projects": {
           "title": "My experiments with HTML, CSS and Javascript",
@@ -88,7 +87,11 @@
               "tag": "p",
               "content": "More coming soon. But you can follow a few codes I developed on <a href=\"//github.com/Thiory07\" target=\"_blank\">GitHub<i class=\"fa fa-github big-icon\"></i></a>"
             }
-          ]
+          ],
+          "img": {
+            "src": "assets/img/thiory-drawing.png",
+            "alt": "My drawing of me"
+          }
 
         },
         "contact": {

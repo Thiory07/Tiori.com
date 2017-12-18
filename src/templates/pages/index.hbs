@@ -52,6 +52,37 @@ title: "Tiori Homepage"
     </div>
     <div class="col-sm-12 bg-neutral-white">
       <div class="p-content">
+        {{#with enUs.content.pages.intro }}
+        <section id="intro" class="site-section mb-2 pt-3">
+          <!-- Information about me -->
+          <h1 id="homeTitle" class="pt-1 pb-3">{{this.title}}</h1>
+          {{!-- content template --}}
+          <div class="js-content">
+            {{#each this.body }}
+              {{>bodyContent}}
+            {{/each}}
+          </div>
+        </section>
+        {{/with}}
+
+        {{#with enUs.content.pages.projects }}
+        <section id="projects" class="site-section mb-5 pt-5" >
+          {{#if this.img}}
+          <figure class="col-xs-12 col-md-4 pull-right drawing-thumb txt-center pt-1">
+            <img src="{{this.img.src}}" alt="{{this.img.alt}}" class="img-fluid">
+            <figcaption id="figCaption">{{this.img.alt}}</figcaption>
+          </figure>
+          {{/if}}
+
+          <h1 class="pt-1 pb-3">{{this.title}}</h1>
+          <div class="js-content">
+          {{#each this.body }}
+            {{>bodyContent}}
+          {{/each}}
+          </div>
+        </section>
+        {{/with}}
+
         {{#with enUs.content.pages.about }}
         <section id="about" class="site-section mb-5 pt-3">
           <!-- Information about me -->
@@ -61,23 +92,6 @@ title: "Tiori Homepage"
             {{#each this.body }}
               {{>bodyContent}}
             {{/each}}
-          </div>
-          <figure class="col-xs-12 col-md-4 pull-right drawing-thumb txt-center pt-5 mt-5">
-            <img src="{{this.img.src}}" alt="{{this.img.alt}}" class="img-fluid">
-            <figcaption id="figCaption">{{this.img.alt}}</figcaption>
-          </figure>
-        </section>
-        {{/with}}
-
-        {{#with enUs.content.pages.projects }}
-        <section id="projects" class="site-section mb-5 pt-5" >
-          <!-- I hope to be posting a few experiments here soon, but for now I'll only give my github reference -->
-
-          <h1 class="pt-1 pb-3">{{this.title}}</h1>
-          <div class="js-content">
-          {{#each this.body }}
-            {{>bodyContent}}
-          {{/each}}
           </div>
         </section>
         {{/with}}
@@ -109,4 +123,4 @@ title: "Tiori Homepage"
   </div>
 </div>
 
-<div class="mb-5 mt-5" style="height:120px;"></div>
+<div class="mb-5 mt-5" style="height:390px;"></div>
