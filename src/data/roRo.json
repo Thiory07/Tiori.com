@@ -1,0 +1,110 @@
+{
+  "roRo": {
+    "content": {
+      "menu": [
+        {
+          "name": "Despre",
+          "url": "about",
+          "color": "bg-postit-helsinki-yellow"
+        },
+        {
+          "name": "Proiecte",
+          "url": "projects",
+          "color": "bg-postit-helsinki-pink"
+        },
+        {
+          "name": "Contact",
+          "url": "contact",
+          "color": "bg-postit-orange"
+        }
+      ],
+      "pages": {
+        "intro":{
+          "title": "Bine ati venit!",
+          "body": [{
+            "tag": "p",
+            "content": "Salut, permite-mi să mă introduc, numele meu este <strong>Ricardo Gimenes Ferreira<\/strong>."
+          },
+          {
+            "tag": "p",
+            "content": "Sunt un programator originar din Brazilia. Lucrez deobicei la proiecte (website-uri) mici sau bloguri <br>Îmi pare bine să te cunosc."
+          }]
+        },
+        "about": {
+          "title": "Totul despre mine",
+          "body": [
+
+            {
+              "tag": "p",
+              "content": "Unul dintre visele mele este să trăiesc în stăinătate, să părăsesc Brazilia pentru o vreme. Îmi doresc să întămpin probleme noi și să vin cu soluții pentru cele vechi. "
+            },
+            {
+              "tag": "p",
+              "content": "Hobby-ul meu este muzica, basul fiind instrumentul meu preferat, dar știu să cânt și la drâmbă, kalimba și alte instrumente mici. Postez în mod regulat în social media cum cânt la aceste intrumente uimitoare, mă poti gasi pe  <a href=\"//www.instagram.com/tioriinsta/\">instagram<\/a>, <a href=\"//www.facebook.com/gimenesferreira\">facebook<\/a> sau <a href=\"\">youtube<\/a>."
+            },
+            {
+              "tag": "p",
+              "content": "Alt lucru care îmi place este să învăț limbi străine și să mă conectez cu oamenii. Până acum am învăţat limbile: engleză, daneză, olandeză, franceză, italiană, japoneză, spaniolă, și rusă. Deoarece cunosc aceste limbi, am încercat să fac un site multilingv."
+            }
+          ]
+        },
+        "projects": {
+          "title": "Experimentele mele cu HTML, CSS și JavaScript",
+          "body": [
+            {
+              "tag": "h2",
+              "content": "Proiecte mele"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "<a target=\"_blank\" href=\"/tests/Me\"> Autoportret cu HTML și CSS</a>"
+                },
+                {
+                  "tag": "li",
+                  "content": "<a target=\"_blank\" href=\"/tests/perspective-slider\"> Slider simplu</a>"
+                }
+              ]
+            },
+            {
+              "tag": "h2",
+              "content": "Blogurile mele"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "<a href=\"/diario\"> Jurnalul meu (Engleză)</a>"
+                },
+                {
+                  "tag": "li",
+                  "content": "<a href=\"/series\"> Ce cred despre serialele TV (Engleză)</a> "
+                }
+              ]
+            },{
+              "tag": "p",
+              "content": "Mai multe în curând, dar mă poţi găsi și pe <a href=\"//github.com/Thiory07\" target=\"_blank\">GitHub<i class=\"fa fa-github big-icon\"></i></a> pentru a vedea proiectele în curs de dezvoltare."
+            }
+          ],
+          "img": {
+            "src": "assets/img/thiory-drawing.png",
+            "alt": "Autoportretul meu"
+          }
+
+        },
+        "contact": {
+          "title": "Modalităti de a ma contacta",
+          "body": [
+            {
+              "tag": "p",
+              "content": "Mai jos regăsești reţelele sociale pe care activez, precum și e-mailul și telefonul meu."
+            }
+          ]
+        }
+      }
+    }
+  }
+}
