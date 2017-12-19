@@ -95,7 +95,7 @@ $(function () {
 		$('.active').removeClass('active');
 		objThis.addClass('active');
 		$('html, body').animate({
-			scrollTop: $(id).offset().top - 100
+			scrollTop: $(id).offset().top - 90
 		}, 600);
 	});
 

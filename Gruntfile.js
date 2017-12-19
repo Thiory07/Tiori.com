@@ -243,6 +243,17 @@
             files: 'dist/assets/lang/*.json'
           }
         },
+        'encode-css-images': {
+
+            options: {
+            imageDir: 'dist/assets/css/base64'
+          },
+          your_target: {
+            files: [{
+              src: 'dist/assets/css/common/main.min.css',
+              dest: 'dist/assets/css/common/main.min.css'}],
+          }
+        },
 
         //clean folder - remove old files under production - dist
         clean: [
@@ -281,6 +292,7 @@
       'copy:jsons',
       'json-minify',
       'uglify',
-      'htmlmin'
+      'htmlmin',
+      'encode-css-images'
   ]);
 };

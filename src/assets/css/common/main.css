@@ -1,3 +1,9 @@
+/*
+
+- Images that will be base64 shoud just have the path
+/base64/file_path/
+
+*/
 body {
   background-color: #fff;
   background-image: linear-gradient(#eee 0.1em, transparent 0.1em);
@@ -88,7 +94,7 @@ body {
   cursor: pointer; }
 
 .flag {
-  background-image: url("/assets/img/flags.jpg");
+  background-image: url("base64/flags.jpg");
   width: 34px;
   height: 24px; }
 
