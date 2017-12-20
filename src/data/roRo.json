@@ -20,7 +20,7 @@
       ],
       "pages": {
         "intro":{
-          "title": "Bine ati venit!",
+          "title": "Bine aţi venit !",
           "body": [{
             "tag": "p",
             "content": "Salut, permite-mi să mă introduc, numele meu este <strong>Ricardo Gimenes Ferreira<\/strong>."
@@ -96,7 +96,7 @@
 
         },
         "contact": {
-          "title": "Modalităti de a ma contacta",
+          "title": "Modalităti de a mă contacta",
           "body": [
             {
               "tag": "p",
