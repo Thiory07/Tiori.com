@@ -28,8 +28,14 @@ gulp.task('default', function() {
           'btn-secondary',
           'dropdown-*',
           'hidden',
+          'active',
+          'site-section',
           'img-fluid',
-          'pull-right'
+          'pull-right',
+          'js-*',
+          'flag',
+          'float-left',
+          'flag-*'
         ],   // ignore these class selectors,
         ids: '*' //ignore all ids and fix problem with css colors
     }))
