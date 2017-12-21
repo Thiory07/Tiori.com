@@ -3,6 +3,9 @@ var languages = {};
 var site = {
 	startSpinner: function () {},
 	stopSpinner: function () {},
+	controlHistory: function(){
+		console.log(history);
+	},
 	_writePage: function (pageId, content) {
 		var page = document.getElementById(pageId);
 		var pageTitle = page.querySelector('h1');
@@ -92,6 +95,8 @@ $(function () {
 		e.preventDefault();
 		var objThis = $(this);
 		var id = objThis.attr("href");
+
+		site.controlHistory(id);
 		$('.active').removeClass('active');
 		objThis.addClass('active');
 		$('html, body').animate({
