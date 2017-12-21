@@ -7,8 +7,7 @@
 
 body{
   background-color: #fff;
-  background-image:
-  linear-gradient(#eee .1em, transparent .1em);
+  background-image: linear-gradient(#eee .1em, transparent .1em);
   background-size: 100% 1.2em;
 }
 
@@ -68,7 +67,7 @@ body{
   cursor: pointer;
 }
 .flag{
-  background-image: url("base64/flags.jpg");
+  background-image: url("/base64/flags.jpg");
   width: 34px;
   height: 24px;
   display: block;

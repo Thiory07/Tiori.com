@@ -246,7 +246,7 @@
         'encode-css-images': {
 
             options: {
-            imageDir: 'dist/assets/css/base64'
+            imageDir: 'dist/assets/img'
           },
           your_target: {
             files: [{
