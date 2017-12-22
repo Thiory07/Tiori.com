@@ -1,0 +1,109 @@
+{
+  "hiIn": {
+    "content": {
+      "menu": [
+        {
+          "name": "परियोजनाओं",
+          "url": "projects",
+          "color": "bg-postit-helsinki-pink"
+        },
+        {
+          "name": "मेरे बारे में",
+          "url": "about",
+          "color": "bg-postit-helsinki-yellow"
+        },
+        {
+          "name": "मुझसे संपर्क",
+          "url": "contact",
+          "color": "bg-postit-orange"
+        }
+      ],
+      "pages": {
+        "intro":{
+          "title": "स्वागत हे!!",
+          "body": [{
+            "tag": "p",
+            "content": "नमस्कार, मुझे अपना परिचय दें, मेरा नाम <strong>Ricardo Gimenes Ferreira<\/strong> है."
+          },
+          {
+            "tag": "p",
+            "content": "मैं ब्राज़ीलियाई प्रोग्रामर हूं जो मुख्य रूप से छोटी वेबसाइटों और ब्लॉगों के साथ काम करता है.<br>आपसे मिलकर अच्छा लगा."
+          }]
+        },
+        "about": {
+          "title": "मेरे बारे में सब",
+          "body": [
+            {
+              "tag": "p",
+              "content": "मेरे एक सपने विदेश में रह रहे हैं, थोड़ी देर के लिए ब्राजील छोड़कर, मैं नई समस्याओं का सामना करना चाहता हूं और पुरानी समस्याओं के लिए अच्छे समाधान के साथ वापस आना चाहता हूं."
+            },
+            {
+              "tag": "p",
+              "content": "मेरा मुख्य शौक संगीत बजा रहा है, बास मेरी पसंदीदा संगीत वाद्य है, लेकिन मैं जानता हूं कि कैसे यहूदी वीणा, कालीम्बा और अन्य छोटे उपकरणों को खेलने के लिए, आप मुझे <a href=\"//www.instagram.com/tioriinsta/\">instagram<\/a>, <a href=\"//www.facebook.com/gimenesferreira\">facebook<\/a> या <a href=\"\">youtube<\/a> पर अनुसरण कर सकते हैं."
+            },
+            {
+              "tag": "p",
+              "content": "दूसरी बात यह है कि मुझे बहुत पसंद है भाषा सीखना और लोगों के साथ बातचीत करना, मुझे पता है कि अंग्रेजी, डैनिश, डच, फ्रेंच, इटालियन, जापानी, स्पैनिश, रूसी और पुर्तगाली (मेरी मूल भाषा के रूप में) कैसे बोलना है, इसलिए मुझे पता है कि कैसे उन भाषा बोलो जो मैंने एक बहुभाषी वेबसाइट बनाने की कोशिश की थी।"
+            }
+          ]
+        },
+        "projects": {
+          "title": "HTML, CSS और Javascript के साथ मेरे प्रयोग",
+          "body": [
+            {
+              "tag": "h2",
+              "content": "कोड प्रयोग"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "<a target=\"_blank\" href=\"/tests/Me\">HTML और CSS में स्व चित्र</a>"
+                },
+                {
+                  "tag": "li",
+                  "content": "<a target=\"_blank\" href=\"/tests/perspective-slider\">सरल परिप्रेक्ष्य स्लाइडर</a>"
+                }
+              ]
+            },
+            {
+              "tag": "h2",
+              "content": "My blogs"
+            },
+            {
+              "tag": "ul",
+              "content": [
+                {
+                  "tag": "li",
+                  "content": "<a href=\"/diario\">मेरी डायरी (अंग्रेज़ी)</a>"
+                },
+                {
+                  "tag": "li",
+                  "content": "<a href=\"/series\">टीवी श्रृंखला के बारे में मुझे क्या लगता है (अंग्रेज़ी)</a> "
+                }
+              ]
+            },{
+              "tag": "p",
+              "content": "और भी आने को है. आप <a href=\"//github.com/Thiory07\" target=\"_blank\">GitHub<i class=\"fa fa-github big-icon\"></i></a> पर विकसित कुछ कोडों का पालन कर सकते हैं "
+            }
+          ],
+          "img": {
+            "src": "assets/img/thiory-drawing.png",
+            "alt": "मेरे चित्रण"
+          }
+
+        },
+        "contact": {
+          "title": "मुझसे बात करने के और तरीके",
+          "body": [
+            {
+              "tag": "p",
+              "content": "यहां सामाजिक नेटवर्क हैं जिनके पास मेरा खाता है, और मेरा ईमेल और फोन भी है."
+            }
+          ]
+        }
+      }
+    }
+  }
+}
