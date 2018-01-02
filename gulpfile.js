@@ -32,7 +32,7 @@ gulp.task('default', function() {
           'site-section',
           'img-fluid',
           'pull-right',
-          'js-*',
+          
           'flag',
           'float-left',
           'flag-*'

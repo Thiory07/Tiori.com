@@ -1,5 +1,10 @@
 // Variable to store the languages
 var languages = {};
+var jsClasses = {
+	content: 'js-content',
+	menuItem: 'js-menu-item',
+	flagItem: 'js-flag-item'
+}
 var site = {
 	startSpinner: function () {},
 	stopSpinner: function () {},
@@ -9,7 +14,7 @@ var site = {
 	_writePage: function (pageId, content) {
 		var page = document.getElementById(pageId);
 		var pageTitle = page.querySelector('h1');
-		var pageContent = page.querySelector('.js-content');
+		var pageContent = page.querySelector("." + jsClasses.content);
 		var innerContent = "";
 		pageTitle.innerHTML = content.pages[pageId].title;
 
@@ -18,7 +23,7 @@ var site = {
 		}
 
 		pageContent.innerHTML = innerContent;
-		var children = $('#' + pageId + ' .js-content').children();
+		var children = $('#' + pageId + ' .'+jsClasses.content).children();
 		for (var i = 0; i < children.length; i++) {
 			var tag = children[i].tagName.toLowerCase();
 			var item = i + 1;
@@ -26,7 +31,7 @@ var site = {
 					loop: false
 				})
 				.add({
-					targets: '#' + pageId + ' .js-content ' + tag + ':nth-child(' + item + ') .letter',
+					targets: '#' + pageId + ' .'+jsClasses.content+' ' + tag + ':nth-child(' + item + ') .letter',
 					opacity: [0, 1],
 					easing: "easeInOutQuad",
 					duration: 700,
@@ -39,7 +44,7 @@ var site = {
 	},
 	writeContent: function (obj, lang) {
 		var content = obj[lang].content;
-		var divs = document.querySelectorAll('.js-menu-item');
+		var divs = document.querySelectorAll("." + jsClasses.menuItem);
 		// Menu items
 		for (var i = 0; i < divs.length; i++) {
 			divs[i].querySelector('div').innerHTML = content.menu[i].name;
@@ -91,7 +96,7 @@ function concatHtml(obj) {
 // Things that need to wait jquery
 $(function () {
 	// Menu behavior
-	$("#menu").on("click", ".js-menu-item", function (e) {
+	$("#menu").on("click", "." + jsClasses.menuItem, function (e) {
 		e.preventDefault();
 		var objThis = $(this);
 		var id = objThis.attr("href");
@@ -105,7 +110,7 @@ $(function () {
 	});
 
 	// Language menu behavior
-	$("#languages").on("click", ".js-flag-item", function (e) {
+	$("#languages").on("click", "." +jsClasses.flagItem + "", function (e) {
 		e.preventDefault();
 		var lang = $(this).attr('data-lang');
 		var flag = $(this).attr('data-flag');
