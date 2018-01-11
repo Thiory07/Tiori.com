@@ -276,6 +276,7 @@
       'json-minify',
       'uglify',
       'htmlmin',
+      'encode-css-images',
       'watch'
   ]);
 
