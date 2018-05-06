@@ -3,15 +3,16 @@
     "content": {
       "menu": [
         {
-          "name": "私について",
-          "url": "about",
-          "color": "bg-postit-helsinki-yellow"
-        },
-        {
           "name": "プロジェクト",
           "url": "projects",
           "color": "bg-postit-helsinki-pink"
         },
+        {
+          "name": "私について",
+          "url": "about",
+          "color": "bg-postit-helsinki-yellow"
+        },
+       
         {
           "name": "連絡",
           "url": "contact",

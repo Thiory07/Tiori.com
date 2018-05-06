@@ -3,15 +3,16 @@
     "content": {
       "menu": [
         {
-          "name": "Обо мне",
-          "url": "about",
-          "color": "bg-postit-helsinki-yellow"
-        },
-        {
           "name": "проектов",
           "url": "projects",
           "color": "bg-postit-helsinki-pink"
         },
+        {
+          "name": "Обо мне",
+          "url": "about",
+          "color": "bg-postit-helsinki-yellow"
+        },
+        
         {
           "name": "контакт",
           "url": "contact",
