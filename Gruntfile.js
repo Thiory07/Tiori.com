@@ -49,13 +49,6 @@
                 ],
                 tasks: ['copy:scripts'],
             },
-            json: {
-              files: [
-                  'src/json-editor/json/*.json',
-                  'src/json-editor/schema/*.json'
-              ],
-              tasks: ['copy'],
-            },
             templates:{
                 files: [
                     'src/templates/includes/**/*.hbs',
@@ -73,7 +66,8 @@
             },
             dataAssemble:{
                 files: [
-                    'src/data/*.json'
+                    'src/data/*.json',
+                    'src/data/**/*.json'
                 ],
                 tasks: ['assemble'],
             },
@@ -127,7 +121,7 @@
                 partials: ['<%= settings.src %>/templates/includes/**/*.hbs'],
                 layoutdir: 'src/templates/layouts/',
                 layout: 'template.hbs',
-                data: ['src/data/*.{json,yml}'],
+                data: ['src/data/**/*.{json,yml}'],
                 helpers: ['src/helpers/*.js']
             },
             main: {
