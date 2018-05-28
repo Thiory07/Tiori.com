@@ -54,36 +54,12 @@
               "tag": "h2",
               "content": "Experimentos de código"
             },
-            {
-              "tag": "ul",
-              "content": [
-                {
-                  "tag": "li",
-                  "content": "<a target=\"_blank\" href=\"/tests/Me\">Autoretrato em html and css</a>"
-                },
-                {
-                  "tag": "li",
-                  "content": "<a target=\"_blank\" href=\"/tests/perspective-slider\"> Slider simples em perspectiva</a>"
-                }
-              ]
-            },
+            
             {
               "tag": "h2",
               "content": "Meus blogs"
             },
             {
-              "tag": "ul",
-              "content": [
-                {
-                  "tag": "li",
-                  "content": "<a href=\"/diario\">Meu diario</a>"
-                },
-                {
-                  "tag": "li",
-                  "content": "<a href=\"/series\">O que eu penso sobre as séries</a> "
-                }
-              ]
-            },{
               "tag": "p",
               "content": "Em breve mais. Mas você pode seguir meus outros projetos no <a href=\"//github.com/Thiory07\" target=\"_blank\">GitHub<i class=\"fa fa-github big-icon\"></i></a>"
             }

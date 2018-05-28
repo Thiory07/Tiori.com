@@ -1,5 +1,5 @@
 ---
-lang: "pt-Br"
+lang: "en-US"
 description: "TioRi Homepage"
 keywords: "fun, funny, funniest"
 robots: "index, follow"
@@ -13,7 +13,7 @@ title: "Tiori Homepage"
     </div>
     <div class="col-sm-12 bg-neutral-white">
       <div class="p-content">
-        {{#with ptBr.content.pages.intro }}
+        {{#with enUs.content.pages.intro }}
         <section id="intro" class="site-section mb-2 pt-3">
           <!-- Information about me -->
           <h1 id="introTitle" class="pt-1 pb-3">{{this.title}}</h1>
@@ -26,7 +26,7 @@ title: "Tiori Homepage"
         </section>
         {{/with}}
         
-        {{#with ptBr.content.pages.projects }}
+        {{#with enUs.content.pages.projects }}
         <section id="projects" class="site-section mb-3 pt-3" >
           {{#if this.img}}
           <figure class="col-xs-12 col-md-4 pull-right drawing-thumb txt-center pt-1">
@@ -46,20 +46,20 @@ title: "Tiori Homepage"
               {{/each}}
             </ul>
             
-            <h2>{{ptBr.content.pages.projects.body.1.content}} (English)</h2>
+            <h2>{{enUs.content.pages.projects.body.1.content}}</h2>
             
             <ul>
               {{#each siteNames.enUS.blogs }}
-                <li><a href="{{this.href}}">{{this.title}} (English)</a></li>
+                <li><a href="{{this.href}}">{{this.title}}</a></li>
               {{/each}}
             </ul>
-            {{#with ptBr.content.pages.projects }}
+            {{#with enUs.content.pages.projects }}
             <{{this.body.2.tag}}>{{{this.body.2.content}}}</{{this.body.2.tag}}>
           </div>
         </section>
         {{/with}}
 
-        {{#with ptBr.content.pages.about }}
+        {{#with enUs.content.pages.about }}
         <section id="about" class="site-section mb-3 pt-3">
           <!-- Information about me -->
           <h1 id="homeTitle" class="pt-1 pb-3">{{this.title}}</h1>
@@ -72,7 +72,7 @@ title: "Tiori Homepage"
         </section>
         {{/with}}
 
-        {{#with ptBr.content.pages.contact }}
+        {{#with enUs.content.pages.contact }}
         <section id="contact" class="site-section mb-3 pt-3" >
           <h1 id="contactTitle" class="pt-1 pb-3">{{this.title}}</h1>
           <div class="js-content">
@@ -100,6 +100,6 @@ title: "Tiori Homepage"
 </div>
 
 <div class="mb-3 mt-3" style="height:445px;"></div>
-{{#with ptBr}}
+{{#with enUs}}
 {{> top-menu}}
 {{/with}}

@@ -1,5 +1,32 @@
 {
-    "siteNames": {
-        "title": "asdf"
+    "siteNames": 
+    {
+        "enUS":{
+            "experiments":[
+                {
+                    "title": "Self portrait in html and css",
+                    "heref": "/tests/Me"
+                },
+                {
+                    "title": "Simple perspective slider",
+                    "heref": "/tests/perspective-slider"
+                }
+
+            ],
+            "blogs" :[
+                {
+                    "title": "My diary",
+                    "href": "/en/diary"
+                },
+                {
+                    "title": "What I think about TV Series",
+                    "href": "/en/series"
+                },
+                {
+                    "title": "Spots",
+                    "href": "/en/spots"
+                }
+            ]
+        }
     }
 }

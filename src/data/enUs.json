@@ -55,35 +55,10 @@
               "content": "Code experiments"
             },
             {
-              "tag": "ul",
-              "content": [
-                {
-                  "tag": "li",
-                  "content": "<a target=\"_blank\" href=\"/tests/Me\">Self portrait in html and css</a>"
-                },
-                {
-                  "tag": "li",
-                  "content": "<a target=\"_blank\" href=\"/tests/perspective-slider\"> Simple perspective slider</a>"
-                }
-              ]
-            },
-            {
               "tag": "h2",
               "content": "My blogs"
             },
             {
-              "tag": "ul",
-              "content": [
-                {
-                  "tag": "li",
-                  "content": "<a href=\"/diario\">My diary</a>"
-                },
-                {
-                  "tag": "li",
-                  "content": "<a href=\"/series\">What I think about TV Series</a> "
-                }
-              ]
-            },{
               "tag": "p",
               "content": "More coming soon. But you can follow a few codes I developed on <a href=\"//github.com/Thiory07\" target=\"_blank\">GitHub<i class=\"fa fa-github big-icon\"></i></a>"
             }
