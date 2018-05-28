@@ -56,35 +56,10 @@
               "content": "Experimentos de código"
             },
             {
-              "tag": "ul",
-              "content": [
-                {
-                  "tag": "li",
-                  "content": "<a target=\"_blank\" href=\"/tests/Me\">Autorretrato en html y css</a>"
-                },
-                {
-                  "tag": "li",
-                  "content": "<a target=\"_blank\" href=\"/tests/perspective-slider\"> Deslizador de perspectiva simple</a>"
-                }
-              ]
-            },
-            {
               "tag": "h2",
               "content": "Mis blogs"
             },
             {
-              "tag": "ul",
-              "content": [
-                {
-                  "tag": "li",
-                  "content": "<a href=\"/diario\">Mi diario (inglés)</a>"
-                },
-                {
-                  "tag": "li",
-                  "content": "<a href=\"/series\">Lo que pienso sobre la Serie de TV (inglés)</a> "
-                }
-              ]
-            },{
               "tag": "p",
               "content": "Más por venir, pero puedes seguir algunos códigos que desarrollé en <a href=\"//github.com/Thiory07\" target=\"_blank\">GitHub<i class=\"fa fa-github big-icon\"></i></a>"
             }
