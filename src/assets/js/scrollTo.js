@@ -1,4 +1,4 @@
-scrollTo = function(to, duration) {
+customScrollTo = function(to, duration) {
     const
     element = document.scrollingElement || document.documentElement,
     start = element.scrollTop,
