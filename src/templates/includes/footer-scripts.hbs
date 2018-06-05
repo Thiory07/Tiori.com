@@ -15,24 +15,8 @@
 
 {{!-- dropdown flags --}}
 <script>
- var classname = document.getElementsByClassName("dropdown");
-var toggleDropdown = function(e) {
-  let element = e.target;
-  if (element.classList) { 
-    element.classList.toggle("show");
-  } else {
-    // For IE9
-    var classes = element.className.split(" ");
-    var i = classes.indexOf("show");
-
-    if (i >= 0) 
-        classes.splice(i, 1);
-    else 
-      classes.push("show");
-      element.className = classes.join(" "); 
-  }
-};
-for (let i = 0; i < classname.length; i++) {
-    classname[i].addEventListener('click', toggleDropdown, false);
-}
+var languages = document.getElementById("languages");
+languages.addEventListener("click", function(e){ console.log(e);
+ 	languages.classList.toggle("show"); console.log(e.target);
+});
 </script>
