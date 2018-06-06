@@ -16,7 +16,21 @@
 {{!-- dropdown flags --}}
 <script>
 var languages = document.getElementById("languages");
-languages.addEventListener("click", function(e){ console.log(e);
- 	languages.classList.toggle("show"); console.log(e.target);
+languages.addEventListener("click", function(e) {
+  console.log(e);
+
+  if (languages.classList) {
+    languages.classList.toggle("show");
+  } else {
+    // For IE9
+    var classes = languages.className.split(" ");
+    var i = classes.indexOf("show");
+
+    if (i >= 0)
+      classes.splice(i, 1);
+    else
+      classes.push("show");
+    languages.className = classes.join(" ");
+  }
 });
 </script>

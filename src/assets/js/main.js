@@ -93,3 +93,9 @@ $(function () {
 	$(window).scroll(throttle(highlightNavigation, 100));
 	/*  */
 });
+
+
+var languages = document.getElementById("languages");
+languages.addEventListener("click", function(e) {
+	languages.classList.toggle("show");
+});
