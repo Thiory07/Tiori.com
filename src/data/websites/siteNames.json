@@ -5,11 +5,11 @@
             "experiments":[
                 {
                     "title": "Self portrait in html and css",
-                    "heref": "/tests/Me"
+                    "href": "/tests/Me"
                 },
                 {
                     "title": "Simple perspective slider",
-                    "heref": "/tests/perspective-slider"
+                    "href": "/tests/perspective-slider"
                 }
 
             ],
