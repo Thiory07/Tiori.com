@@ -102,8 +102,8 @@ document.addEventListener("DOMContentLoaded", function(e) {
 	  this.classList.toggle("show");
 	});
 
-	//onscroll event
-	window.addEventListener('scroll', throttle(highlightNavigation, 500));
+	// Throttle for events that fire multiple times per seccond
+	window.addEventListener('scroll', throttle(highlightNavigation, 20));
 	function throttle(fn, wait) {
 	  var time = Date.now();
 	  return function() {
@@ -113,8 +113,36 @@ document.addEventListener("DOMContentLoaded", function(e) {
 	    }
 	  }
 	}
-	  
+	// On Scroll change navigation
 	function highlightNavigation() {
-	  console.log("scroll fired");
+	  	// get the current vertical position of the scroll bar
+		// var scrollPosition = $(window).scrollTop();
+		// var $sections = $($(".site-section").get().reverse());
+		var scrollPosition = document.documentElement.scrollTop;
+		console.log(scrollPosition);
+		
+		// iterate the sections
+		/*$sections.each(function () {
+			var currentSection = $(this);
+			// get the position of the section
+			var sectionTop = currentSection.offset().top - 100;
+
+			// if the user has scrolled over the top of the section
+			if (scrollPosition >= sectionTop) {
+				// get the section id
+				var id = currentSection.attr('id');
+				// get the corresponding navigation link
+				var $navigationLink = sectionIdTonavigationLink[id];
+				// if the link is not active
+				if (!$navigationLink.hasClass('active')) {
+					// remove .active class from all the links
+					$navigationLinks.removeClass('active');
+					// add .active class to the current link
+					$navigationLink.addClass('active');
+				}
+				// we have found our section, so we return false to exit the each loop
+				return false;
+			}
+		});*/
 	}
 });
