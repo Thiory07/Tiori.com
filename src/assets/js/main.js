@@ -6,13 +6,18 @@ var jsClasses = {
 	flagItem: 'js-flag-item'
 }
 var site = {
-	startSpinner: function () {},
-	stopSpinner: function () {},
-	controlHistory: function(){
-		console.log(history);
+	start: function(){ 
+		this.setSections(); 
+		this.setMenu(); 
 	},
+	setSections: function(){ 
+		this.sections = document.getElementsByClassName('site-section'); 
+	},
+	setMenu: function(){ 
+		this.menuItems =  document.getElementById('menu').getElementsByClassName(jsClasses.menuItem); 
+	}
 }
-
+site.start();
 // Things that need to wait jquery
 $(function () {
 	// Menu behavior
@@ -61,88 +66,70 @@ $(function () {
 		};
 	}
 
-	function highlightNavigation() {
-		// get the current vertical position of the scroll bar
-		var scrollPosition = $(window).scrollTop();
-
-		// iterate the sections
-		$sections.each(function () {
-			var currentSection = $(this);
-			// get the position of the section
-			var sectionTop = currentSection.offset().top - 100;
-
-			// if the user has scrolled over the top of the section
-			if (scrollPosition >= sectionTop) {
-				// get the section id
-				var id = currentSection.attr('id');
-				// get the corresponding navigation link
-				var $navigationLink = sectionIdTonavigationLink[id];
-				// if the link is not active
-				if (!$navigationLink.hasClass('active')) {
-					// remove .active class from all the links
-					$navigationLinks.removeClass('active');
-					// add .active class to the current link
-					$navigationLink.addClass('active');
-				}
-				// we have found our section, so we return false to exit the each loop
-				return false;
-			}
-		});
-	}
-
-	$(window).scroll(throttle(highlightNavigation, 100));
 	/*  */
 });
 
 
-document.addEventListener("DOMContentLoaded", function(e) {
-	//languages button
-	var languages = document.getElementById("languages");
-	languages.addEventListener("click", function(e) {
-	  this.classList.toggle("show");
-	});
 
-	// Throttle for events that fire multiple times per seccond
-	window.addEventListener('scroll', throttle(highlightNavigation, 20));
-	function throttle(fn, wait) {
-	  var time = Date.now();
-	  return function() {
-		if ((time + wait - Date.now()) < 0) {
-		  fn();
-		  time = Date.now();
-	    }
-	  }
-	}
-	// On Scroll change navigation
-	function highlightNavigation() {
-	  	// get the current vertical position of the scroll bar
-		// var scrollPosition = $(window).scrollTop();
-		// var $sections = $($(".site-section").get().reverse());
-		var scrollPosition = document.documentElement.scrollTop;
-		console.log(scrollPosition);
-		
-		// iterate the sections
-		/*$sections.each(function () {
-			var currentSection = $(this);
-			// get the position of the section
-			var sectionTop = currentSection.offset().top - 100;
 
-			// if the user has scrolled over the top of the section
-			if (scrollPosition >= sectionTop) {
-				// get the section id
-				var id = currentSection.attr('id');
-				// get the corresponding navigation link
-				var $navigationLink = sectionIdTonavigationLink[id];
-				// if the link is not active
-				if (!$navigationLink.hasClass('active')) {
-					// remove .active class from all the links
-					$navigationLinks.removeClass('active');
-					// add .active class to the current link
-					$navigationLink.addClass('active');
-				}
-				// we have found our section, so we return false to exit the each loop
-				return false;
-			}
-		});*/
-	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Pure Javascript code 
+
+console.log("Javascript loaded");
+//languages button
+window.languages = document.getElementById("languages");
+window.languages.addEventListener("click", function(e) {
+	console.log("Languages click");
+  window.languages.classList.toggle("show");
 });
+
+// Throttle for events that fire multiple times per seccond
+window.addEventListener('scroll', throttle(highlightNavigation, 20));
+window.addEventListener('resize', throttle(setSiteVar, 20));
+function setSiteVar(){
+	site.setSections();
+}
+function throttle(fn, wait) {
+  var time = Date.now();
+  return function() {
+	if ((time + wait - Date.now()) < 0) {
+	  fn();
+	  time = Date.now();
+    }
+  }
+}
+// On Scroll change navigation
+function highlightNavigation() {
+  	
+	var scrollPosition = document.documentElement.scrollTop;
+	var change = true;
+	//console.log(scrollPosition);
+	removeHighlightNavigation();
+	console.log( "debug window scroll:" + scrollPosition);
+	for(let i= site.sections.length; i >0; i--){
+		if (scrollPosition > site.sections[i].offsetTop && change) {
+			site.menuItems[i].classList.add('active');
+			change=false;
+			return false;
+  		}
+	}
+
+}
+function removeHighlightNavigation(){
+	let elems = document.querySelectorAll(".active");
+	[].forEach.call(elems, function(el) {
+		el.classList.remove("active");
+	});
+}
