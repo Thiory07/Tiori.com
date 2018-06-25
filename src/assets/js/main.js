@@ -1,135 +1,127 @@
 // Variable to store the languages
 var languages = {};
 var jsClasses = {
-	content: 'js-content',
-	menuItem: 'js-menu-item',
-	flagItem: 'js-flag-item'
+  content: 'js-content',
+  menuItem: 'js-menu-item',
+  flagItem: 'js-flag-item'
 }
 var site = {
-	start: function(){ 
-		this.setSections(); 
-		this.setMenu(); 
-	},
-	setSections: function(){ 
-		this.sections = document.getElementsByClassName('site-section'); 
-	},
-	setMenu: function(){ 
-		this.menuItems =  document.getElementById('menu').getElementsByClassName(jsClasses.menuItem); 
-	}
+  start: function() {
+    this.setSections();
+    this.setMenu();
+  },
+  setSections: function() {
+    this.sections = document.getElementsByClassName('site-section');
+  },
+  setMenu: function() {
+    this.menuItems = document.getElementById('menu').getElementsByClassName(jsClasses.menuItem);
+  },
+  scrollOffset: -20
 }
 site.start();
-// Things that need to wait jquery
-$(function () {
-	// Menu behavior
-	$("#menu").on("click", "." + jsClasses.menuItem, function (e) {
-		e.preventDefault();
-		var objThis = $(this);
-		var id = objThis.attr("href");
 
-		site.controlHistory(id);
-		$('.active').removeClass('active');
-		objThis.addClass('active');
-		$('html, body').animate({
-			scrollTop: $(id).offset().top - 90
-		}, 600);
-	});
-
-	// cache the navigation links
-	var $navigationLinks = $('#menu > a');
-	// cache (in reversed order) the sections
-	var $sections = $($(".site-section").get().reverse());
-
-	// map each section id to their corresponding navigation link
-	var sectionIdTonavigationLink = {};
-	$sections.each(function () {
-		var id = $(this).attr('id');
-		sectionIdTonavigationLink[id] = $('#menu > a[href="#' + id + '"]');
-	});
-
-	// throttle function, enforces a minimum time interval
-	function throttle(fn, interval) {
-		var lastCall, timeoutId;
-		return function () {
-			var now = new Date().getTime();
-			if (lastCall && now < (lastCall + interval)) {
-				// if we are inside the interval we wait
-				clearTimeout(timeoutId);
-				timeoutId = setTimeout(function () {
-					lastCall = now;
-					fn.call();
-				}, interval - (now - lastCall));
-			} else {
-				// otherwise, we directly call the function
-				lastCall = now;
-				fn.call();
-			}
-		};
-	}
-
-	/*  */
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/**/
+customScrollTo = function(to, duration) {
+  const
+    element = document.scrollingElement || document.documentElement,
+    start = element.scrollTop,
+    change = to - start,
+    startDate = +new Date(),
+    // t = current time
+    // b = start value
+    // c = change in value
+    // d = duration
+    easeInOutQuad = function(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return c / 2 * t * t + b;
+      t--;
+      return -c / 2 * (t * (t - 2) - 1) + b;
+    },
+    animateScroll = function() {
+      const currentDate = +new Date();
+      const currentTime = currentDate - startDate;
+      element.scrollTop = parseInt(easeInOutQuad(currentTime, start, change, duration));
+      if (currentTime < duration) {
+        requestAnimationFrame(animateScroll);
+      } else {
+        element.scrollTop = to;
+      }
+    };
+  animateScroll();
+};
+/**/
 
 
 // Pure Javascript code 
-
 console.log("Javascript loaded");
 //languages button
 window.languages = document.getElementById("languages");
 window.languages.addEventListener("click", function(e) {
-	console.log("Languages click");
   window.languages.classList.toggle("show");
+  window.addEventListener("click", closeLanguages);
 });
+var closeLanguages = function(evt) {
+	var flyoutElement = document.getElementById('languages'),
+        targetElement = evt.target;  // clicked element
+    do {
+        if (targetElement == flyoutElement) {
+            // This is a click inside. Do nothing, just return.
+            return;
+        }
+        // Go up the DOM
+        targetElement = targetElement.parentNode;
+    } while (targetElement);
+    // This is a click outside.
+     window.languages.classList.remove("show");
+    window.removeEventListener("click", closeLanguages);
+    return;
+}
 
 // Throttle for events that fire multiple times per seccond
-window.addEventListener('scroll', throttle(highlightNavigation, 20));
-window.addEventListener('resize', throttle(setSiteVar, 20));
-function setSiteVar(){
-	site.setSections();
+window.addEventListener('scroll', throttle(highlightNavigation, 2));
+window.addEventListener('resize', throttle(setSiteVar, 2));
+
+function setSiteVar() {
+  site.setSections();
 }
+
 function throttle(fn, wait) {
   var time = Date.now();
   return function() {
-	if ((time + wait - Date.now()) < 0) {
-	  fn();
-	  time = Date.now();
+    if ((time + wait - Date.now()) < 0) {
+      fn();
+      time = Date.now();
     }
   }
 }
 // On Scroll change navigation
 function highlightNavigation() {
-  	
-	var scrollPosition = document.documentElement.scrollTop;
-	var change = true;
-	//console.log(scrollPosition);
-	removeHighlightNavigation();
-	console.log( "debug window scroll:" + scrollPosition);
-	for(let i= site.sections.length; i >0; i--){
-		if (scrollPosition > site.sections[i].offsetTop && change) {
-			site.menuItems[i].classList.add('active');
-			change=false;
-			return false;
-  		}
-	}
-
+  var scrollPosition = document.documentElement.scrollTop;
+  var change = true;
+  removeClass('active');
+  for (let i = site.sections.length - 1; i > 0; i--) {
+    if (scrollPosition >= site.sections[i].offsetTop + site.scrollOffset && change) {
+      site.menuItems[i - 1].classList.add('active');
+      change = false;
+      return false;
+    }
+  }
 }
-function removeHighlightNavigation(){
-	let elems = document.querySelectorAll(".active");
-	[].forEach.call(elems, function(el) {
-		el.classList.remove("active");
-	});
+
+function removeClass(classes) {
+  let elems = document.querySelectorAll("." + classes);
+  [].forEach.call(elems, function(el) {
+    el.classList.remove(classes);
+  });
+}
+
+
+// menu click
+for (var i = 0; i < site.menuItems.length; i++) {
+  site.menuItems[i].addEventListener("click", clickMenu);
+}
+
+function clickMenu() {
+  var href = this.getAttribute('href');
+  customScrollTo(document.querySelectorAll(href)[0].offsetTop + site.scrollOffset, 400);
 }

@@ -27,6 +27,33 @@
                     "href": "/en/spots"
                 }
             ]
+        },
+        "ptBR":{
+            "experiments":[
+                {
+                    "title": "Meu retrato em HTML e CSS",
+                    "href": "/tests/Me"
+                },
+                {
+                    "title": "Slider em perspectiva",
+                    "href": "/tests/perspective-slider"
+                }
+
+            ],
+            "blogs" :[
+                {
+                    "title": "Meu diário",
+                    "href": "/diary"
+                },
+                {
+                    "title": "Sobre séries",
+                    "href": "/series"
+                },
+                {
+                    "title": "Pontos",
+                    "href": "/pontos"
+                }
+            ]
         }
     }
 }
