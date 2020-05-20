@@ -28,6 +28,6 @@
   },
   "dependencies": {
     "grunt-assemble-sitemap": "^0.2.6",
-    "npm": "^6.1.0"
+    "npm": "^6.13.4"
   }
 }
